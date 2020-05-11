@@ -62,6 +62,12 @@ public:
     storyPoints.insert(storyPoints.begin() + indexToAdd, reusedStoryPoint);
   }
 
+  void printAll(){
+    for(int i = 0; i < quests.size(); i++){
+      std::cout << quests[i].getTitle() << std::endl;
+    }
+  }
+
 };
 
 #endif

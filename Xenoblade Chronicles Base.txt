@@ -1,0 +1,2949 @@
+﻿-Enter Colony 9
+
+
+Title: Collection 1
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Ether Light
+
+
+Title: Challenge 2
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Ether Light
+
+
+Title: Biscuits for a Grandson
+Giver: Marcia
+Time: 10 AM
+Area: Colony 9, Ether Light
+
+
+Title: Search 3
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Ether Light
+
+
+Title: Monster 3-1
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: Monster 3-2
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: Monster 3-3
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: Monster 3-4
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: Material 3
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: Collection 4
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Residential District
+
+
+Title: Collection 3
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Residential District
+
+
+Title: Search 2
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Residential District
+
+
+Title: The Key to a Long Life
+Giver: Dionysis
+Time: 10 AM
+Area: Colony 9, Residential District
+
+
+Title: Lonely Niranira
+Giver: Niranira
+Time: 10 AM
+Area: Colony 9, Residential District
+
+
+Title: Education-Minded Suzanna
+Giver: Suzanna
+Time: 10 AM
+Area: Colony 9, Tranquil Square
+
+
+Title: Material 2
+Giver: Resident
+Time: 10 PM
+Area: Colony 9, Ether Light
+
+
+Title: The Broken Watch
+Giver: Desiree
+Time: 10,30 PM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: Collection 2
+Giver: Resident
+Time: 10 PM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: Search 1
+Giver: Resident
+Time: 10 PM
+Area: Colony 9, Central Plaza
+
+
+Title: Search 4
+Giver: Resident
+Time: 10 PM
+Area: Colony 9, Residential District
+
+
+Title: Material 4
+Giver: Resident
+Time: 10 PM
+Area: Colony 9, Tranquil Square
+
+
+-Military District Cutscene
+
+
+Title: Monster 2-1
+Giver: Soldier
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: Monster 2-2
+Giver: Soldier
+Time: 10 AM
+Area: Colony 9, Military District 
+
+
+Title: Monster 2-3
+Giver: Soldier
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: Material 1
+Giver: Nopon
+Time: 10 AM
+Area: Colony 9, Weapon Development Lab
+
+
+Title: A Young Captain’s Request
+Giver: Emmy Leater
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: Challenge 1
+Giver: Soldier
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: Monster 1-1
+Giver: Soldier
+Time: 10 PM
+Area: Colony 9, Military District
+
+
+Title: Monster 1-2
+Giver: Soldier
+Time: 10 PM
+Area: Colony 9, Military District
+
+
+Title: Monster 1-3
+Giver: Soldier
+Time: 10 PM
+Area: Colony 9, Military District
+
+
+Title: Challenge 3
+Giver: Soldier
+Time: 10 PM
+Area: Colony 9, Military District
+
+
+Title: A Curry Conundrum
+Giver: Georgio
+Time: 10 AM
+Area: Colony 9, Ether Light
+
+
+Title: Rocco’s Heartfelt Request
+Giver: Rocco
+Time: 10 AM
+Area: Colony 9, Gem Man’s Stall
+
+
+-Weapon Development Lab’s Monado Scene
+
+
+Title: Challenge 4
+Giver: Resident
+Time: 10 AM
+Area: Colony 9, Gem Man’s Stall
+
+
+-Get Fiora Again
+
+
+Title: Monster 4-1
+Giver: Soldier
+Time: Any
+Area: Colony 9, Outside Tephra Cave
+
+
+Title: Monster 4-2
+Giver: Soldier
+Time: Any
+Area: Colony 9, Outside Tephra Cave
+
+
+Title: Monster 4-3
+Giver: Soldier
+Time: Any
+Area: Colony 9, Outside Tephra Cave
+
+
+Title: Dean’s Shady Request
+Giver: Dean
+Time: 10 AM
+Area: Colony 9, Weapon Development Lab
+
+
+Title: Pride and Courage
+Giver: Lukas
+Time: 10 AM
+Area: Colony 9, Residential District
+
+
+Title: Education-Crazy Suzanna
+Giver: Suzanna
+Time: 10 AM
+Area: Colony 9, Tranquil Square
+
+
+Title: Liliana’s Sincere Request
+Giver: Liliana
+Time: 10 AM
+Area: Colony 9, Dunban’s House
+
+
+-Mechon Attack Colony 9
+
+
+Title: Overworked and Underpaid
+Giver: Georgio
+Time: 10 AM
+Area: Colony 9, Ether Light
+
+
+Title: Mementos of a Lost Son
+Giver: Cheryl
+Time: 10 AM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: Paola and Narine
+Giver: Narine
+Time: 10 AM
+Area: Colony 9, Residential District
+
+
+Title: Flattened Flowers
+Giver: Francoise
+Time: 10 AM
+Area: Colony 9, Tranquil Square
+
+
+Title: A Young Captain’s Suffering
+Giver: Emmy Leater
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: Romantic Notions of a Girl
+Giver: Monica
+Time: 12 AM
+Area: Colony 9, Weapon Development Lab
+Exclusive
+
+
+Title: Romantic Notions of a Boy
+Giver: Andreas
+Time: 12 AM
+Area: Colony 9, Military District
+Exclusive
+
+
+Title: The Plan-Preparation
+Giver: Sesame
+Time: 10 PM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: An Impoverished Critic
+Giver: Leopold
+Time: 10 PM
+Area: Colony 9, Ether Light
+
+
+Title: Financial Planning
+Giver: Leopold
+Time: 10 PM
+Area: Colony 9, Ether Light
+
+
+Title: The Plan-The Night Before
+Giver: Sesame
+Time: 10 PM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: The Plan-Execution
+Giver: Sesame
+Time: 10 PM
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: A Young Captain’s Rise
+Giver: Emmy Leater
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: Missing in Action
+Giver: Soldier
+Time: Any
+Area: Tephra Cave, Mag Mell Ruins
+
+
+Title: Arachno Silk Fundraising
+Giver: Soldier
+Time: Any
+Area: Tephra Cave, Mag Mell Ruins
+
+
+Title: Collection 1
+Giver: Soldier
+Time: Any
+Area: Tephra Cave, Escape Pod Bay
+
+
+Title: Collection 2
+Giver: Soldier
+Time: Any
+Area: Tephra Cave, Escape Pod Bay
+
+
+Title: Material 1
+Giver: Soldier
+Time: Any
+Area: Tephra Cave, Escape Pod Bay
+
+
+Title: Material 2
+Giver: Soldier
+Time: Any
+Area: Tephra Cave, Escape Pod Bay
+
+
+Title: A Thank You
+Giver: Soldier
+Time: Any
+Area: Tephra Cave, Mag Mell Ruins
+
+
+Title: Clearing Obstructions
+Giver: Soldier
+Time: Any
+Area: Tephra Cave, Escape Pod Bay
+
+
+Title: The Lost Pendant
+Giver: Soldier
+Time: Any
+Area: Colony 9, Cylinder Hangar
+
+
+-Reach Bionis Leg
+
+
+Title: Monster 1-1
+Giver: Traveller
+Time: Any
+Area: Bionis’ Leg, Ragrinar Canyon Pass
+
+
+Title: Monster 1-2
+Giver: Traveller
+Time: Any
+Area: Bionis’ Leg, Ragrinar Canyon Pass
+
+
+Title: Monster 1-3
+Giver: Traveller
+Time: Any
+Area: Bionis’ Leg, Ragrinar Canyon Pass
+
+
+Title: Monster 1-4
+Giver: Traveller
+Time: Any
+Area: Bionis’ Leg, Ragrinar Canyon Pass
+
+
+Title: The Lost Nopon
+Giver: Gerugu
+Time: Any
+Area: Bionis’ Leg, Traveller’s Rest
+
+
+-Get Sharla
+
+
+Title: Challenge 1-1
+Giver: Refugee
+Time: Any
+Area: Bionis’ Leg, Path to Refugee Camp
+
+
+Title: Challenge 1-2
+Giver: Refugee
+Time: Any
+Area: Bionis’ Leg, Path to Refugee Camp
+
+
+Title: Thieving Monsters
+Giver: Gorman
+Time: 10 PM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Material 2
+Giver: Refugee
+Time: 10 PM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Material 4
+Giver: Refugee
+Time: 10 PM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Collection 1
+Giver: Refugee
+Time: 10 PM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Search 2
+Giver: Refugee
+Time: Refugee Camp
+Area: Bionis’ Leg, 10 PM
+Timed
+
+
+Title: Monster 3-1
+Giver: Refugee
+Time: 10 PM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Monster 3-2
+Giver: Refugee
+Time: 10 PM
+Area: Bionis’ Leg, Refugee Camp
+Timed 
+
+
+Title: Earnest’s Fibs
+Giver: Earnest
+Time: 10 PM
+Area: Bionis’ Leg, Refugee Camp
+
+
+Title: Material 1
+Giver: Refugee
+Time: 10 PM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Material 3
+Giver: Refugee
+Time: 10 PM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Challenge 2-1
+Giver: Refugee
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Challenge 2-2
+Giver: Refugee
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Search 1
+Giver: Refugee
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Collection 2
+Giver: Refugee
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Monster 2
+Giver: Refugee
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Emergency Treatment
+Giver: Olga
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: A Thoughtful Idea
+Giver: Matryona
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: A Dash of Colour
+Giver: Ewan
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+
+
+Title: Imaginations Tempered
+Giver: Matryona
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+Exclusive
+
+
+Title: Spirits Raised
+Giver: Arda
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+Exclusive
+
+
+Title: Being a Good Grandfather
+Giver: Satata
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: The Greedy Monster
+Giver: Satata
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+Timed
+
+
+Title: Earnest’s Mischief
+Giver: Earnest
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+
+
+Title: Esarnest’s Solitude
+Giver: Earnest
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+
+
+Title: With Much Gratitude
+Giver: Batubatu
+Time: Any
+Area: Bionis’ Leg, Traveller’s Rest
+
+
+Title: With Even More Gratitude
+Giver: Gerugu
+Time: Any
+Area: Bionis’ Leg, Traveller’s Rest
+
+
+Title: Save the Girl!
+Giver: Surprise
+Time: Any
+Area: Bionis’ Leg, Volff Lair
+Timed
+
+
+Title: Out-of-Luck Georgio
+Giver: Georgio
+Time: 10 AM
+Area: Colony 9, Ether Light
+
+
+Title: Pestering Paola
+Giver: Georgio
+Time: 10 AM
+Area: Colony 9, Ether Light
+
+
+Title: Jackson’s Awakening
+Giver: Jackson
+Time: 10 AM
+Area: Colony 9, Residential District
+
+
+Title: Jackson the Poet
+Giver: Jackson
+Time: 10 AM
+Area: Colony 9, Residential District
+Exclusive
+
+
+Title: Jackson the Cook
+Giver: Jackson
+Time: 10 AM
+Area: Colony 9, Residential District
+Exclusive
+
+
+-Reach Colony 6
+
+
+Title: A Mysterious Light
+Giver: Kenny Rohan
+Time: 10 AM
+Area: Colony 9, Tranquil Square
+
+
+Title: Out Like a Light?
+Giver: Kenny Rohan
+Time: 10 AM
+Area: Colony 9, Tranquil Square
+
+
+Title: Proof of Status
+Giver: Daza
+Time: Any
+Area: Colony 6, Supply Road
+
+
+Title: Safety First
+Giver: Daza
+Time: Any
+Area: Colony 6, Supply Road
+
+
+Title: Secret Mission
+Giver: Daza
+Time: Any
+Area: Colony 6, Supply Road
+
+
+-Complete Ether Mine
+
+
+Title: Desiree’s Future
+Giver: Desiree
+Time: 10,30 PM
+Area: Colony 9, Gem Man’s Stall
+
+
+-Reach Satorl Marsh
+
+
+Title: Monster 1
+Giver: Merchant
+Time: Any
+Area: Satorl Marsh, Nopon Merchant Camp
+
+
+Title: Monster 2
+Giver: Merchant
+Time: Any
+Area: Satorl Marsh, Nopon Merchant Camp
+
+
+Title: Monster 3
+Giver: Merchant
+Time: Any
+Area: Satorl Marsh, Nopon Merchant Camp
+
+
+Title: Monster 4
+Giver: Merchant
+Time: Any
+Area: Satorl Marsh, Nopon Merchant Camp
+
+
+Title: Kacha’s Kidnapping
+Giver: Bokobo
+Time: Any
+Area: Satorl Marsh, Nopon Merchant Camp
+
+
+Title: Making Camp
+Giver: Bokobo
+Time: Any
+Area: Satorl Marsh, Nopon Merchant Camp
+
+
+Title: The Giants’ Key
+Giver: Kacha
+Time: Any
+Area: Satorl Marsh, Nopon Merchant Camp
+
+
+Title: The Giants’ Treasure
+Giver: Kacha
+Time: Any
+Area: Satorl Marsh, Nopon Merchant Camp
+
+
+Title: Preventing Starvation
+Giver: Zazadan
+Time: Any
+Area: Satorl Marsh, Nopon Refuge
+
+
+Title: Zazadan in Danger
+Giver: Zazadan
+Time: Any
+Area: Satorl Marsh, Nopon Refuge
+
+
+Title: Zazadan Still in Danger
+Giver: Zazadan
+Time: Any
+Area: Satorl Marsh, Nopon Refuge
+
+
+Title: It’s All in the Mind
+Giver: Zazadan
+Time: Any
+Area: Satorl Marsh, Nopon Refuge
+
+
+Title: A Mysterious Delicacy
+Giver: Zazadan
+Time: Any
+Area: Satorl Marsh, Nopon Refuge
+
+
+Title: A Gift?
+Giver: Zazadan
+Time: Any
+Area: Satorl Marsh, Nopon Refuge
+Timed
+
+
+-Sororal Statues Cutscene
+
+
+Title: The Gem Man’s Invention
+Giver: Gem Man
+Time: Any
+Area: Colony 9, Gem Man’s Stall
+
+
+Title: The Road Home
+Giver: Otharon
+Time: Any
+Area: Colony 6, Main Entrance
+Timed
+Exclusive
+
+
+Title: A Selfish Girl’s Mistake
+Giver: Anna
+Time: 10 AM
+Area:  Colony 6, Reconstruction HQ
+
+
+Title: Satata’s Younger Brother
+Giver: Satata
+Time: 10 AM
+Area:  Colony 6, Reconstruction HQ
+
+
+Title: Rest in Peace
+Giver: Satata
+Time: 10 AM
+Area:  Colony 6, Reconstruction HQ
+
+
+Title: What is Love?!
+Giver: Ewan
+Time: 10 PM
+Area:  Colony 6, Reconstruction HQ
+Exclusive
+
+
+Title: What is Courage?!
+Giver: Ewan
+Time: 10 PM
+Area:  Colony 6, Reconstruction HQ
+Exclusive
+
+
+Title: Matryona’s Answer
+Giver: Matryona
+Time: 10 PM
+Area:  Colony 6, Reconstruction HQ
+Exclusive
+
+
+Title: For the Restoration
+Giver: Gorman
+Time: 10 PM
+Area:  Colony 6, Reconstruction HQ
+Timed
+
+
+Title: Making a New Path
+Giver: Gorman
+Time: 10 PM
+Area:  Colony 6, Reconstruction HQ
+Timed
+
+
+Title: Chemist’s Reopening
+Giver: Olga
+Time: 10 PM
+Area:  Colony 6, Reconstruction HQ
+
+
+-Reach Makna Forest
+
+
+Title: Monster 1
+Giver: Merchant
+Time: Any
+Area: Makna Forest, Agni Tablet
+
+
+Title: Monster 2
+Giver: Merchant
+Time: Any
+Area: Makna Forest, Agni Tablet
+
+
+Title: Monster 3
+Giver: Merchant
+Time: Any
+Area: Makna Forest, Agni Tablet
+
+
+Title: Monster 4
+Giver: Merchant
+Time: Any
+Area: Makna Forest, Agni Tablet
+
+
+-Get Riki
+
+
+Title: Collection 2
+Giver: Villager
+Time: 10 AM
+Area: Frontier Village, East B1F
+
+
+Title: Hunt for Bug-Loving Friend
+Giver: Kokora
+Time: 10 AM
+Area: Frontier Village, Nopon Tower
+
+
+Title: Challenge 1
+Giver: Villager
+Time: 10 AM
+Area: Frontier Village, B1F
+
+
+Title: Material 1
+Giver: Villager
+Time: 10 AM
+Area: Frontier Village, 1F
+
+
+Title: Monster 2-1
+Giver: Villager
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Monster 2-2
+Giver: Villager
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Monster 2-3
+Giver: Villager
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Fixing the Mushrooms
+Giver: Migaga
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Strange Noises from Below
+Giver: Pipiki
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Challenge 2
+Giver: Villager
+Time: 10 AM
+Area: Frontier Village, Kyn Shopping Street
+
+
+Title: Pollen Orb Ingredients
+Giver: Dobadoba
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+
+
+Title: Search 1
+Giver: Villager
+Time: 10 AM
+Area: Frontier Village, 3F
+
+
+Title: Leku’s Food Crisis
+Giver: Leku
+Time: 10 AM
+Area: Frontier Village, 5F
+
+
+Title: Dadapon in Trouble
+Giver: Pachi[a
+Time: 12 PM
+Area: Frontier Village, Archaeology Centre
+
+
+Title: Decoration Makeover
+Giver: Pepa
+Time: 10 AM
+Area: Frontier Village, Chief’s Residence
+
+
+Title: Collection 4
+Giver: Villager
+Time: 10 AM
+Area: Frontier Village, Apex Lake
+
+
+Title: Material 4
+Giver: Villager
+Time: 10 PM
+Area: Frontier Village, Prophecy Hut
+
+
+Title: Collection 3
+Giver: Villager
+Time: 10 PM
+Area: Frontier Village, 6F
+
+
+Title: Kind Lupa’s Grampypon
+Giver: Lupa
+Time: 10 PM
+Area: Frontier Village, Archaeology Centre
+
+
+Title: Secret Elixer Ingredients
+Giver: Lupa
+Time: 10 PM
+Area: Frontier Village, Archaeology Centre
+
+
+Title: Challenge 3
+Giver: Villager
+Time: 10 PM
+Area: Frontier Village, Archaeology Centre
+
+
+Title: Search 2
+Giver: Villager
+Time: 10 PM
+Area: Frontier Village, 5F
+
+
+Title: Making a Mixer
+Giver: Rono
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+
+
+Title: Materials for a Mixer
+Giver: Rono
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+
+
+Title: Collection 1
+Giver: Villager
+Time: 10 PM
+Area: Frontier Village, Kyn Shopping Street
+
+
+Title: Material 2
+Giver: Villager
+Time: 10 PM
+Area: Frontier Village, Sacred ALtar
+
+
+Title: Mushy Mushrooms
+Giver: Kofuko
+Time: 10 PM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Search 3
+Giver: Villager
+Time: 10 PM
+Area: Frontier Village, Underground Store
+
+
+Title: Monster 1-1
+Giver: Villager
+Time: 10 PM
+Area: Frontier Village, B1F
+
+
+Title: Monster 1-2
+Giver: Villager
+Time: 10 PM
+Area: Frontier Village, B1F
+
+
+Title: Monster 1-3
+Giver: Villager
+Time: 10 PM
+Area: Frontier Village, B1F
+
+
+Title: A Worried Bug Lover
+Giver: Deki
+Time: 10 AM
+Area: Frontier Village, B1F
+
+
+Title: Disinsectization
+Giver: Rasha
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Sweet Seduction
+Giver: Migaga
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Ingredients for a Brew
+Giver: Kofuko
+Time: 10 PM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Hunt for a Patron
+Giver: Leku
+Time: 10 AM
+Area: Frontier Village, 5F
+
+
+Title: It Definitely Exist
+Giver: Pachipa
+Time: 12 PM
+Area: Frontier Village, Archaeology Centre
+
+
+Title: Secret Innovation
+Giver: Rasha
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Heropon’s Spirit
+Giver: Kilaki
+Time: 10 AM
+Area: Frontier Village, 5F
+
+
+Title: Beat Kilaki to it!
+Giver: Leku
+Time: 10 AM
+Area: Frontier Village, 5F
+
+
+Title: Popularity Premonition
+Giver: Leku
+Time: 10 AM
+Area: Frontier Village, 5F
+
+
+Title: Lousy Lizards
+Giver: Modamo
+Time: 10 PM
+Area: Frontier Village, 5F
+
+
+Title: Secret Ingredient Hunt
+Giver: Bana
+Time: 10 PM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Musical Genius
+Giver: Tati
+Time: 10 PM
+Area: Frontier Village, Nopon Kitchen
+
+
+Title: Things that Hum
+Giver: Tati
+Time: 10 PM
+Area: Frontier Village, Nopon Kitchen
+
+
+Title: Things that Rumble
+Giver: Tati
+Time: 10 PM
+Area: Frontier Village, Nopon Kitchen
+
+
+Title: The Master’s Successor
+Giver: Dobadoba
+Time: 10 AM
+Area: Frontier Village, Pollen Orb Storehouse
+
+
+Title: Challenge
+Giver: Merchant
+Time: Any
+Area: Makna Forest, Agni Tablet
+
+
+Title: Defend Colony 6-Mechon
+Giver: Juju
+Time: Any
+Area: Colony 6, Reconstruction HQ
+
+
+Title: A Gutsy Trader
+Giver: Werner
+Time: 10 AM
+Area: Colony 6, Flower Garden
+
+
+Title: A Big Brother’s Fight
+Giver: Zuzaku
+Time: 10 PM
+Area: Colony 9, Residential District
+Timed
+Exclusive
+
+
+Title: A Little Brother’s Fight
+Giver: Jiroque
+Time: 10 PM
+Area: Colony 9, Residential District
+Timed
+Exclusive
+
+
+Title: The Old Soldier’s Test
+Giver: Jan
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: A Young Captain’s Challenge
+Giver: Emmy Leater
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: Thawing Relations
+Giver: Zuzaku
+Time: 10 PM
+Area: Colony 9, Residential District
+Exclusive
+
+
+Title: A Place to Come Home to
+Giver: Jiroque
+Time: 10 PM
+Area: Colony 9, Residential District
+Exclusive
+
+
+Title: Desiree’s Apology
+Giver: Desiree
+Time: 10 PM
+Area: Colony 9, Gem Man’s Stall
+Exclusive
+
+
+Title: Betty’s Gift
+Giver: Betty
+Time: 10 AM
+Area: Colony 9, Tranquil Square
+Exclusive
+
+
+-Reach Eryth Sea
+
+
+Title: Avenge a Mamapon’s Death
+Giver: Rasha
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Honouring the Nopon Sage
+Giver: Pipiki
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: A Tormented Bug-Lover
+Giver: Deki
+Time: 10 AM
+Area: Frontier Village, B1F
+
+
+Title: Meeting the Nopon Sage
+Giver: Pipiki
+Time: 10 AM
+Area: Frontier Village, Sacred Altar
+
+
+Title: Legend of the Sage
+Giver: Nopon Sage
+Time: 12 PM
+Area: Makna Forest, Divine Sanctuary
+
+
+Title: Challenge of the Sage
+Giver: Nopon Sage
+Time: 12 PM
+Area: Makna Forest, Divine Sanctuary
+
+
+-Reach Alcamoth
+
+
+Title: A Friend in Need
+Giver: Lecrough
+Time: 10 AM
+Area: Alcamoth, Great Hall Stairs
+Timed
+
+
+Title: Challenge 3
+Giver: Guard
+Time: 10 AM
+Area: Alcamoth, Ascension Hall
+Timed
+
+
+Title: Material 4
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, Melfica Road
+Timed
+
+
+Title: Monster 1-1
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, Melfica Road
+Timed
+
+
+Title: Monster 1-2
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, Melfica Road
+Timed
+
+
+Title: Monster 1-3
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, Melfica Road
+Timed
+
+
+Title: Looking for Gold Bugs
+Giver: Teelan
+Time: 10 AM
+Area: Alcamoth, Melfica Road
+Timed
+
+
+Title: Material 2
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, 1F
+Timed
+
+
+Title: Bring Back My Son!
+Giver: Merisa
+Time: 10 AM
+Area: Alcamoth, Upper Walkway North
+Timed
+
+
+Title: Monster 3-1
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, U-Shaped Bridge North
+Timed
+
+
+Title: Monster 3-2
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, U-Shaped Bridge North
+Timed
+
+
+Title: Monster 3-3
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, U-Shaped Bridge North
+Timed
+
+
+Title: Collection 1
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, Upper Walkway Middle
+Timed
+
+
+Title: Looking for a Lost Son
+Giver: Vol’aren
+Time: 10 AM
+Area: Alcamoth, South Wall GF
+Timed
+
+
+Title: Looking for a Lost Daughter
+Giver: Vol’aren
+Time: 10 AM
+Area: Alcamoth, South Wall GF
+Timed
+
+
+Title: Collection 3
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, Fountain of Hope
+Timed
+
+
+Title: Collection 2
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, Fountain of Hope
+Timed
+
+
+Title: Material 3
+Giver: Guard
+Time: 10 AM
+Area: Alcamoth, Main Entrance
+Timed
+
+
+Title: Going out to Play
+Giver: Popipo
+Time: 10 AM
+Area: Alcamoth, Main Entrance
+Timed
+
+
+Title: Material 1
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, Main Entrance
+Timed
+
+
+Title: Preparing for Adventure
+Giver: Zain
+Time: 10 AM
+Area: Alcamoth, GF North Elevator
+Timed
+
+
+Title: Preparing for Adventure 2
+Giver: Kurralth
+Time: 10 AM
+Area: Alcamoth, GF North Elevator
+Timed
+
+
+Title: Search 3
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, GF North Elevator
+Timed
+
+
+Title: Challenge 4
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, GF North Wall
+Timed
+
+
+Title: Losing the Taste for Alcohol
+Giver: Nelo
+Time: 10 PM
+Area: Alcamoth, GF South Elevator
+Timed
+
+
+Title: Search 4
+Giver: Citizen
+Time: 10 AM
+Area: Alcamoth, Fountain of Hope
+Timed
+
+
+Title: How do they Feel?
+Giver: Scarlen
+Time: 10 PM
+Area: Alcamoth, GF Central Elevator
+Timed
+
+
+Title: Building Bridges
+Giver: Arielle
+Time: 10 PM
+Area: Alcamoth, Fountain of Eternity
+Timed
+
+
+Title: Challenge 2
+Giver: Citizen
+Time: 10 PM
+Area: Alcamoth, GF North Elevator
+Timed
+
+
+Title: How do I feel?
+Giver: Scarlen
+Time: 10 PM
+Area: Alcamoth, GF Central Elevator
+Timed
+
+
+Title: Search 1
+Giver: Citizen
+Time: 10 PM
+Area: Alcamoth, GF Central Elevator
+Timed
+
+
+Title: Challenge 1
+Giver: Citizen
+Time: 10 PM
+Area: Alcamoth, GF South Elevator
+Timed
+
+
+Title: Search 2
+Giver: Citizen
+Time: 10 PM
+Area: Alcamoth, GF
+Timed
+
+
+Title: The Deciphering Machine
+Giver: Ruthan
+Time: 10 PM
+Area: Alcamoth, 1F South Ships
+Timed
+
+
+Title: Collection 4
+Giver: Citizen
+Time: 10 PM
+Area: Alcamoth, 1F South Ships
+Timed
+
+
+Title: Monster 2-1
+Giver: Guard
+Time: 10 PM
+Area: Alcamoth, Imperial Palace Entrance
+Timed
+
+
+Title: Monster 2-2
+Giver: Guard
+Time: 10 PM
+Area: Alcamoth, Imperial Palace Entrance
+Timed
+
+
+Title: Monster 2-3
+Giver: Guard
+Time: 10 PM
+Area: Alcamoth, Imperial Palace Entrance
+Timed
+
+
+Title: Back Pain
+Giver: Galdo
+Time: 10 PM
+Area: Alcamoth, Great Hall Stairs
+Timed
+
+
+Title: Monster 4-1
+Giver: Guard
+Time: 10 PM
+Area: Alcamoth, Great Hall Stairs
+Timed
+
+
+Title: Monster 4-2
+Giver: Guard
+Time: 10 PM
+Area: Alcamoth, Great Hall Stairs
+Timed
+
+
+Title: Monster 4-3
+Giver: Guard
+Time: 10 PM
+Area: Alcamoth, Great Hall Stairs
+Timed
+
+
+Title: Monster 1
+Giver: Lighthouse Keeper
+Time: Any
+Area: Eryth Sea, Syrath Lighthouse
+
+
+Title: Monster 2
+Giver: Lighthouse Keeper
+Time: Any
+Area: Eryth Sea, Syrath Lighthouse
+
+
+Title: Challenge
+Giver: Lighthouse Keeper
+Time: Any
+Area: Eryth Sea, Syrath Lighthouse
+
+
+Title: Collection 1
+Giver: Citizen
+Time: Any
+Area: Eryth Sea, Syrath Lighthouse
+
+
+Title: Collection 2
+Giver: Citizen
+Time: Any
+Area: Eryth Sea, Syrath Lighthouse
+
+
+Title: Preparing for Adventure 3
+Giver: Zain
+Time: 10 AM
+Area: Alcamoth, G1F North Elevator
+Timed
+
+
+Title: Together Forever
+Giver: Scarlen
+Time: 10 PM
+Area: Alcamoth, GF Central Elevator
+Timed
+Exclusive
+
+
+Title: I Love You no Matter What
+Giver: Scarlen
+Time: 10 PM
+Area: Alcamoth, GF Central Elevator
+Timed
+Exclusive
+
+
+Title: Starlight Seeker
+Giver: Elior
+Time: 10 AM
+Area: Alcamoth, GF North Wall
+Timed
+
+
+Title: Teaching Materials
+Giver: Mir’liez
+Time: 10 AM
+Area: Alcamoth, U Bridge South
+Timed
+
+
+Title: Brave Actions
+Giver: Mir’liez
+Time: 10 AM
+Area: Alcamoth, U Bridge South
+Timed
+
+
+Title: Protect the Capital!
+Giver: Lecrough
+Time: 10 AM
+Area: Alcamoth, Great Hall Stairs
+Timed
+
+
+Title: Missing Lodger
+Giver: Ma’crish
+Time: 10 AM
+Area: Colony 6, Reconstruction HQ
+
+
+Title: Cook-Off Counter Attack!
+Giver: Hoko
+Time: 10 AM
+Area: Colony 6, Reconstruction HQ
+
+
+Title: Cook-Off Comeback?
+Giver: Hoko
+Time: 10 AM
+Area: Colony 6, Reconstruction HQ
+
+
+Title: A Delectable Delicacy
+Giver: Pokapoka
+Time: 10 AM
+Area: Colony 6, Reconstruction HQ
+
+
+Title: Cook-Off Final Blow?!
+Giver: Tolonyth
+Time: 10 AM
+Area: Colony 6, Reconstruction HQ
+
+
+Title: Looking for Freedom
+Giver: Nopo’rikh
+Time: 10 AM
+Area: Colony 6, City Farm
+
+
+Title: Dangerous Ambition
+Giver: Cherri
+Time: 10 AM
+Area: Frontier Village, Pollen Orb Storehouse
+Timed
+
+
+Title: Find the Kingpin
+Giver: Gadada
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+Timed
+
+
+Title: Adviser Hunt
+Giver: Gadada
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+Timed
+
+
+Title: Gather Information
+Giver: Gadada
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+Timed
+
+
+Title: Evidence Collection
+Giver: Gadada
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+Timed
+
+
+Title: Destroying the City Trade
+Giver: Gadada
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+Timed
+
+
+Title: Getting a Member’s Card
+Giver: Gadada
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+Timed
+
+
+-Rescue the Lighthouse Worker
+
+
+Title: Trouble at the Plant
+Giver: Jarack
+Time: Any
+Area: Eryth Sea, Ether Plant
+
+
+Title: Punish the Hodes
+Giver: Jarack
+Time: Any
+Area: Eryth Sea, Ether Plant
+
+
+Title: Mend the Plant
+Giver: Jarack
+Time: Any
+Area: Eryth Sea, Ether Plant
+
+
+Title: Hode Attack
+Giver: Jarack
+Time: Any
+Area: Eryth Sea, Ether Plant
+
+
+-Finish High Entia Tomb
+
+
+Title: A Necessary Upgrade
+Giver: Naroth
+Time: 10 AM
+Area: Alcamoth, Melfica Road
+Timed
+
+
+Title: Starlight Gazer
+Giver: Elior
+Time: 10 AM
+Area: Alcamoth, GF North Wall
+Timed
+
+
+Title: Talia’s Research
+Giver: Talia
+Time: 10 PM
+Area: Alcamoth, Melfica Road
+Timed
+
+
+Title: Defend Colony 6-Reptile
+Giver: Juju
+Time: Any
+Area: Colony 6, Reconstruction HQ
+
+
+-Reunite Party After High Entia Tomb
+
+
+Title: Trouble at the Lighthouse
+Giver: Shalen
+Time: Any
+Area: Eryth Sea, Syrath Lighthouse
+
+
+-Reach Valek Mountain (After Prison Island Events)-
+
+
+Title: Bridge Repair
+Giver: Researcher
+Time: Any
+Area: Makna Forest, Pod Landing Site
+
+
+Title: Cook-Off Showdown!
+Giver: Ma’crish
+Time: 10 AM
+Area: Colony 6, Reconstruction HQ
+
+
+Title: A Tantalizing Treat
+Giver: Pokapoka
+Time: 10 AM
+Area: Colony 6, Reconstruction HQ
+
+
+Title: Medical Advancements
+Giver: Medi
+Time: 10 PM
+Area: Frontier Village, Kyn Shopping Street
+Timed
+Exclusive
+
+
+Title: Mystery of Makna Ruins 1
+Giver: Lupa
+Time: 10 PM
+Area: Frontier Village, Archaeology Center
+
+
+Title: Mystery of Makna Ruins 2
+Giver: Lupa
+Time: 10 PM
+Area: Frontier Village, Archaeology Center
+
+
+Title: Giant Attack!
+Giver: Lalapa
+Time: 10 AM
+Area: Frontier Village, Chief’s Residence
+
+
+Title: Material 3
+Giver: Villager
+Time: 10 AM
+Area: Frontier Village, Archaeology Center
+
+
+Title: Let’s Make Fillings!
+Giver: Yusa
+Time: 10 AM
+Area: Frontier Village, Underground Store
+Exclusive
+
+
+Title: Mystery of Makna Ruins 3
+Giver: Lupa
+Time: 10 PM
+Area: Frontier Village, Archaeology Centre
+
+
+Title: Mystery of Makna Ruins 4
+Giver: Lupa
+Time: 10 PM
+Area: Frontier Village, Archaeology Centre
+
+
+Title: Reversed Tastes
+Giver: Kofuko
+Time: 10 PM
+Area: Frontier Village, Sacred Altar
+Exclusive
+
+
+Title: World’s Strongest Flavour
+Giver: Kofuko
+Time: 10 PM
+Area: Frontier Village, Sacred Altar
+Exclusive
+
+
+Title: Healing the Healer
+Giver: Npa
+Time: 10 AM
+Area: Frontier Village, Underground Store
+
+
+Title: Legendary Nopon Charm
+Giver: Npa
+Time: 10 AM
+Area: Frontier Village, Underground Store
+
+
+Title: Believing Again
+Giver: Vidian
+Time: 10 AM
+Area: Alcamoth, U bridge South
+Timed
+
+
+Title: Adventurers in Peril
+Giver: Miriall
+Time: 10 PM
+Area: Alcamoth, Imperial Palace
+Timed
+
+
+Title: Monster 1
+Giver: Merchant
+Time: Any
+Area: Valek Mountain, Zokhed Pass
+
+
+Title: Monster 2
+Giver: Merchant
+Time: Any
+Area: Valek Mountain, Zokhed Pass
+
+
+Title: Monster 3
+Giver: Merchant
+Time: Any
+Area: Valek Mountain, Zokhed Pass
+
+
+Title: Monster 4
+Giver: Merchant
+Time: Any
+Area: Valek Mountain, Zokhed Pass
+
+
+Title: Chilkins and Antols
+Giver: Researcher
+Time: Any
+Area: Valek Mountain, Nopon Camp
+
+
+Title: The Freezing Nopon
+Giver: Researcher
+Time: Any
+Area: Valek Mountain, Jakt Geyser
+
+
+Title: Valek Mountain Research
+Giver: Researcher
+Time: Any
+Area: Valek Mountain, Nopon Camp
+
+
+Title: Legend of Mythical Empress
+Giver: Gerugu
+Time: Any
+Area: Bionis’ Leg, Traveller’s Rest
+
+
+Title: Cursed Berryjammy
+Giver: Norara
+Time: 10 AM
+Area: Colony 6, Main Street
+Exclusive
+
+
+Title: Weak Berryjammy
+Giver: Norara
+Time: 10 AM
+Area: Colony 6, Main Street
+Exclusive
+
+
+Title: Obstinate Berryjammy
+Giver: Norara
+Time: 10 AM
+Area: Colony 6, Main Street
+
+
+Title: Unstoppable Berryjammy
+Giver: Berryjammy
+Time: 10 PM
+Area: Colony 6, City Farm
+
+
+Title: Miss Sweetness Showdown!
+Giver: Berryjammy
+Time: 10 PM
+Area: Colony 6, Main Street
+Timed
+Exclusive
+
+
+Title: Miss Sweetness Showdown!
+Giver: Ma’crish
+Time: 10 AM
+Area: Colony 6, Reconstruction HQ
+Timed
+Exclusive
+
+
+Title: The Most Transparent Thing
+Giver: See Your Miss Sweetness Showdown! Info
+Time: See Your Miss Sweetness Showdown! Info
+Area: See Your Miss Sweetness Showdown! Info
+
+
+Title: Mislabelling Problem
+Giver: Medi
+Time: 10 PM
+Area: Frontier Village, Kyn Shopping Street
+
+
+Title: Getting Bigger!
+Giver: Dabidabi
+Time: 10 PM
+Area: Frontier Village, 7F
+
+
+Title: Who is Bigger?
+Giver: Dabidabi
+Time: 10 PM
+Area: Frontier Village, 7F
+
+
+-Get Magma Rock
+
+
+Title: Bad Timing
+Giver: Researcher
+Time: Any
+Area: Valek Mountain, Nofol Tower
+
+
+Title: Chilkin Changes
+Giver: Dakuku
+Time: Any
+Area: Valek Mountain, Nopon Camp
+
+
+Title: The Balance of Power
+Giver: Dakuku
+Time: Any
+Area: Valek Mountain, Nopon Camp
+
+
+-Reach Sword Valley
+
+
+Title: Secure Dolgan Outpost
+Giver: N/A
+Time: Any
+Area: Sword Valley, Dolgan Outpost
+Timed
+
+
+Title: Secure Enalda Control Base
+Giver: N/A
+Time: Any
+Area: Sword Valley, Enalda Control Base
+Timed
+
+
+Title: 3rd Gate Front Line
+Giver: N/A
+Time: Any
+Area: Sword Valley, Third Gate
+Timed
+
+
+Title: Secure the Radio Tower
+Giver: N/A
+Time: Any
+Area: Sword Valley, Radio Tower
+Timed
+
+
+-Reunite on Fallen Arm
+
+
+Title: Fixing a Broken Door
+Giver: Rizaka
+Time: 10 AM
+Area: Fallen Arm, Hidden Machina Village
+
+
+Title: Mysterious Noises
+Giver: Prox
+Time: 10 PM
+Area: Fallen Arm, Ether Light
+
+
+Title: Food Delivery
+Giver: Natalia
+Time: 10 PM
+Area: Fallen Arm, Junks
+
+
+Title: I Want to be a Homs!
+Giver: Rakzet
+Time: 10 AM
+Area: Fallen Arm, Junks
+
+
+Title: For my Loved One...
+Giver: Zarkort
+Time: Any
+Area: Fallen Arm, Digit 2
+Timed
+
+
+Title: To my Loved One...
+Giver: Zarkort
+Time: Any
+Area: Fallen Arm, Digit 2
+Timed
+
+
+Title: Powerless
+Giver: Razket
+Time: 10 AM
+Area: Fallen Arm, Junks
+
+
+Title: Power Up!
+Giver: Razket
+Time: 10 AM
+Area: Fallen Arm, Junks
+
+
+Title: The Wilted Flower
+Giver: Rizaka
+Time: 10 AM
+Area: Fallen Arm, Ether Light
+
+
+Title: A Tough Battle
+Giver: Kazat
+Time: 10 AM
+Area: Fallen Arm, Machine Village Walkway
+
+
+Title: Protect the Village!
+Giver: Eleqa
+Time: 10 AM
+Area: Fallen Arm, Machina Village Entrance
+
+
+Title: Stop the Mechon Rampage!
+Giver: Eleqa
+Time: 10 AM
+Area: Fallen Arm, Machina Village Entrance
+
+
+Title: Therapy
+Giver: Eleqa
+Time: 10 AM
+Area: Fallen Arm, Machina VIllage Entrance
+
+
+Title: Scheduled Inspection
+Giver: Xexit
+Time: 10 PM
+Area: Fallen Arm, Ether Light
+
+
+-Complete Piezoelectric Unit Story Quest
+
+
+Title: Save the Machine!
+Giver: Voltak
+Time: 10 AM
+Area: Fallen Arm, Junks
+
+
+Title: The History of Mechonis
+Giver: Zilex
+Time: 10 AM
+Area: Fallen Arm, Junks
+
+
+Title: Mending Memories
+Giver: Mixik
+Time: 10 PM
+Area: Fallen Arm, Junks
+
+
+Title: Resolution-Mother
+Giver: Mixik
+Time: 10 PM
+Area: Fallen Arm, Junks
+
+
+Title: Resolution-Father
+Giver: Mixik
+Time: 10 PM
+Area: Fallen Arm, Junks
+
+
+Title: The Oath Sword
+Giver: Karlos
+Time: 10 PM
+Area: Fallen Arm, Machina Village Entrance
+
+
+Title: Eliminate the Threat
+Giver: Voltak
+Time: 10 AM
+Area: Fallen Arm, Junks
+
+
+Title: To Colony 6!
+Giver: Dulland
+Time: Any
+Area: Colony 6, Main Entrance
+Exclusive
+
+
+-Reach Mechonis Field
+
+
+Title: Best Boots
+Giver: Bozatrox
+Time: Any
+Area: Mechonis Field, Machina Refuge
+Timed
+
+
+Title: Monster Quest
+Giver: Troop
+Time: Any
+Area: Mechonis Field, Machina Refuge
+Timed
+
+
+Title: Challenge 1
+Giver: Troop
+Time: Any
+Area: Mechonis Field, Machina Refuge
+Timed
+
+
+Title: Challenge 2
+Giver: Troop
+Time: Any
+Area: Mechonis Field, Machina Refuge
+Timed
+
+
+Title: Defend Colony 6-Elite
+Giver: Juju
+Time: Any
+Area: Colony 6, Reconstruction HQ
+
+
+Title: In Pursuit of Love
+Giver: Rosemary
+Time: 10 PM
+Area: Colony 6, Main Street
+
+
+Title: Odd Smoke-Investigation
+Giver: Arda
+Time: 10 AM
+Area: Colony 6, Main Street
+
+
+Title: Odd Smoke-Resolution
+Giver: Arda
+Time: 10 AM
+Area: Colony 6, Main Street
+
+
+Title: Miss Sweetness’ Gratitude
+Giver: Berryjammy
+Time: 10 PM
+Area: Colony 6, Main Street
+Exclusive
+
+
+Title: Miss Sweetness’ Gratitude
+Giver: Ma’crish
+Time: 10 AM
+Area: Colony 6, Reconstruction HQ
+Exclusive
+
+
+Title: A Final Sweet Favour
+Giver: See Your Miss Sweetness’ Gratitude Info
+Time: See Your Miss Sweetness’ Gratitude Info
+Area: See Your Miss Sweetness’ Gratitude Info
+
+
+Title: Nopon Determination
+Giver: Mefimefi
+Time: 10 PM
+Area: Colony 6, Main Street
+
+
+Title: A Weapon Just for Me
+Giver: Kazat
+Time: 10 AM
+Area: Fallen Arm, Machina Village Entrance
+Timed
+
+
+-Reach Central Factory
+
+
+Title: Eliminate the Backup!
+Giver: N/A
+Time: Any
+Area: Central Factory, Storage Depot
+Timed
+
+
+Title: Roof Battle
+Giver: N/A
+Time: Any
+Area: Central Factory, Training Ground Roof
+Timed
+
+
+Title: Daring Assault
+Giver: N/A
+Time: Any
+Area: Central Factory, Mechon Factory
+
+
+-Reach Agniritha
+
+
+Title: Civil Protection 1-1
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Civil Protection 1-2
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Civil Protection 1-3
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Civil Protection 2-1
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Civil Protection 2-2
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Civil Protection 2-3
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Military Status 1-1
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Military Status 1-2
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Military Status 2-1
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Military Status 2-2
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Agniritha Beautification 1
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Agniritha Beautification 2
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Telethia Investigation 1
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Telethia Investigation 2
+Giver: Terminal
+Time: Any
+Area: Agniritha, Central Tower
+Timed
+
+
+Title: Nic’s Training
+Giver: Nopo’rikh
+Time: 10 AM
+Area: Colony 6, City Farm
+
+
+Title: Nic’s Final Test
+Giver: Nopo’rikh
+Time: 10 AM
+Area: Colony 6, City Farm
+
+
+Title: Family Secrets
+Giver: En Argentis
+Time: Colony 6, 10 PM
+Area: Pond Cliff
+
+
+Title: The Melody of Happiness
+Giver: Nic
+Time: 10 PM
+Area: Colony 6, Southeast Wall
+Timed
+Exclusive
+
+
+Title: Dream of a Poet
+Giver: Yura
+Time: 10 AM
+Area: Colony 6, Main Street
+Timed
+Exclusive
+
+
+Title: A Butler’s Concerns
+Giver: Gowago
+Time: 10 AM
+Area: Colony 6, Pond
+
+
+Title: Betrothal Test
+Giver: Peppino
+Time: 10 PN
+Area: Colony 6, Pond Cliff
+
+
+Title: Stopping the Elopement
+Giver: Don Argentis
+Time: 10 AM
+Area: Colony 6, South Houses
+
+
+Title: The History of the Capital
+Giver: Zilex
+Time: 10 PM
+Area: Fallen Arm, Junks
+Timed
+
+
+-Complete Agniritha
+
+
+Title: A New Weapon for Fiora
+Giver: Staff
+Time: Any
+Area: Central Factory, Junks
+Timed
+
+
+-Reunite After Mechonis Core
+
+
+Title: A Young Captain’s Revival
+Giver: Miller
+Time: 10 AM
+Area: Colony 9, Military District
+Exclusive
+
+
+Title: A Young Captain’s Trust
+Giver: Miller
+Time: 10 AM
+Area: Colony 9, Military District
+Exclusive
+
+
+Title: Birthday Shoes
+Giver: Kantz
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: The Elite Captain’s Anguish
+Giver: Raoul
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: Getting to Know Minnie
+Giver: Raoul
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: Getting to Know Dorothy
+Giver: Raoul
+Time: 10 AM
+Area: Colony 9, Military District
+
+
+Title: A Token of Friendship
+Giver: N/A
+Time: Any
+Area: Colony 9, Weapon Development Lab
+
+
+Title: Friendship Tokens
+Giver: Moritz
+Time: 10 AM
+Area: Colony 9, Residential District
+
+
+Title: Defend Colony 6-Ancient
+Giver: Juju
+Time: Any
+Area: Colony 6, Reconstruction HQ
+
+
+Title: Securing Provisions
+Giver: Dulland
+Time: Any
+Area: Colony 6, Junks
+
+
+Title: Delivering the Undeliverable
+Giver: Shilx
+Time: 10 AM
+Area: Colony 6, Main Entrance Third Level
+
+
+Title: A Dauntless Trader
+Giver: Werner
+Time: 10 AM
+Area: Colony 6, Reconstruction HQ
+
+
+Title: Finding the Unfindable
+Giver: Shilx
+Time: 10 AM
+Area: Colony 6, Main Entrance Third Level
+
+
+Title: A Maid’s Concerns
+Giver: Minana
+Time: 10 AM
+Area: Colony 6, Pond Houses
+
+
+Title: Homs Determination
+Giver: Perrine
+Time: 10 PM
+Area: Colony 6, Main Street
+
+
+Title: Melancholy Tyrea
+Giver: Tyrea
+Time: Any
+Area: Colony 6, North Gate
+
+
+Title: The Imperial Ceremomy
+Giver: Scarlen
+Time: 10 PM
+Area: Satorl Marsh, Oath Sanctuary
+
+
+Title: Imperial Ceremony Offerings
+Giver: Scarlen
+Time: 10 PM
+Area: Satorl Marsh, Oath Sanctuary
+
+
+Title: Challenge
+Giver: Refugee
+Time: 10 AM
+Area: Satorl Marsh, Sororal Statues
+
+
+Title: For a Friend
+Giver: Rozeal
+Time: 10 AM
+Area: Satorl Marsh, Sororal Statues
+
+
+Title: A Merciful End
+Giver: Rozeal
+Time: 10 AM
+Area: Satorl Marsh, Sororal Statues
+
+
+Title: Final Challenge of the Sage
+Giver: Nopon Sage
+Time: 12 PM
+Area: Makna Forest, Divine Sanctuary
+
+
+Title: A Memento of Daddy
+Giver: Atael
+Time: 10 AM
+Area: Frontier Village, B1F
+
+
+Title: Bana the Betrayer
+Giver: Gadada
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+
+
+Title: Even in the Chief’s Absence
+Giver: Miko
+Time: 10 PM
+Area: Frontier Village, Mysterious Sanctuary
+
+
+Title: Restoring the Capital
+Giver: Nelo
+Time: 10 PM
+Area: Frontier Village, Bridge Entrance
+
+
+Title: Bored Pelupelu
+Giver: Pelupelu
+Time: 10 PM
+Area: Frontier Village, Mysterious Sanctuary
+
+
+Title: A Gift for Miko
+Giver: Pelupelu
+Time: 12 PM
+Area: Frontier Village, Prophecy Hut
+
+
+Title: Distilling Active Ingredients
+Giver: Cherri
+Time: 10 AM
+Area: Frontier Village, Pollen Orb Storehouse
+Exclusive
+
+
+Title: Safer Energy
+Giver: Gadada
+Time: 10 AM
+Area: Frontier Village, Pollen Works
+Exclusive
+
+
+Title: Presents for Priceless Pupils
+Giver: Dobadoba
+Time: 10 AM
+Area: Frontier Village, Pollen Orb Storehouse
+
+
+Title: Investigating Satorl
+Giver: Miriall
+Time: 10 PM
+Area: Eryth Sea, Ether Plant Transporter
+Exclusive
+
+
+Title: The Missing Boy
+Giver: Miriall
+Time: 10 PM
+Area: Eryth Sea, Ether Plant Transporter
+
+
+Title: Ancient High Entia Mystery
+Giver: Talia
+Time: 10 PM
+Area: Eryth Sea, Ether Plant Transporter
+
+
+Title: The Missing Partner
+Giver: Kurralth
+Time: 10 AM
+Area: Valek Mountain, Harict Chapel
+Exclusive
+
+
+Title: The Final Giants’ Ruins
+Giver: Zain
+Time: 10 AM
+Area: Valek Mountain, Harict Chapel
+
+
+Title: The Giants’ Treasures
+Giver: Zain
+Time: 10 AM
+Area: Valek Mountain, Harict Chapel
+
+
+Title: Stunted Growth
+Giver: Orkatix
+Time: 10 AM
+Area: Fallen Arm, Northeast Pipe
+
+
+Title: Transmission Bypass
+Giver: Orkatix
+Time: 10 AM
+Area: Fallen Arm, Northeast Pipe
+
+
+Title: The Exhaust Pump
+Giver: Orkatix
+Time: 10 AM
+Area: Fallen Arm, Northeast Pipe
+
+
+Title: The Mini Reactor
+Giver: Orkatix
+Time: 10 AM
+Area: Fallen Arm, Northeast Pipe
+
+
+-Reach Bionis Interior
+
+
+Title: Replica Monado 1
+Giver: Vanea
+Time: Any
+Area: Bionis’ Interior, Junks
+
+
+Title: Replica Monado 2
+Giver: Vanea
+Time: Any
+Area: Bionis’ Interior, Junks
+
+
+Title: Replica Monado 3
+Giver: Vanea
+Time: Any
+Area: Bionis’ Interior, Junks
+
+
+Title: Replica Monado 4
+Giver: Vanea
+Time: Any
+Area: Bionis’ Interior, Junks
+
+
+Title: Replica Monado 5
+Giver: Vanea
+Time: Any
+Area: Bionis’ Interior, Junks
+
+
+Title: Family Secrets
+Giver: Zel Argentis
+Time: 10 PM
+Area: Colony 6, Pond Cliff
+
+
+Title: Betrothal Test
+Giver: Oleksiy
+Time: 10 PM
+Area: Colony 6, Zel Argentis
+
+
+Title: Stopping the Elopement
+Giver: Don Argentis
+Time: 10 AM
+Area: Colony 6, South Houses
+
+
+Title: Lifespan of a Machina
+Giver: Neonik
+Time: 10 AM
+Area: Colony 6, South Houses
+
+
+Title: A Poet’s Concerns
+Giver: Yura
+Time: 10 AM
+Area: Colony 6, Main Street
+
+
+-Reach Prison Island
+
+
+Title: Defend Colony 6-Demon
+Giver: Juju
+Time: Any
+Area: Colony 6, Reconstruction HQ
+
+
+-Revisit Alcamoth
+
+
+Title: Vidian Rescue Mission
+Giver: N/A
+Time: Any
+Area: Alcamoth
+
+
+Title: Restoring the Capital 2
+Giver: Nelo
+Time: 10 PM
+Area: Frontier Village, Bridge Entrance
+
+
+Title: Broken Ether Furnace
+Giver: Kaleka
+Time: 10 PM
+Area: Frontier Village, Nopon Tower
+
+
+Title: Broken Ether Furnace 2
+Giver: Kaleka
+Time: 10 PM
+Area: Frontier Village, Nopon Tower
+
+
+Title: A Release from Duty
+Giver: Rozeal
+Time: 10 AM
+Area: Satorl Marsh, Sororal Statues
+
+
+Title: I Will Never Forget You
+Giver: Vidian
+Time: 10 AM
+Area: Eryth Sea, Ether Plant
+Exclusive
+
+
+Title: The Only Thing I Can Do
+Giver: Vidian
+Time: 10 AM
+Area: Eryth Sea, Ether Plant
+Exclusive
+
+
+Title: Secret Research
+Giver: Teelan
+Time: 10 AM
+Area: Eryth Sea, Ether Plant Transporter
+
+
+-Revisit Tephra Cave
+
+
+Title: The Book of Bafalgar
+Giver: Shura
+Time: Any
+Area: Tephra Cave, Bafalgar Tomb
+
+
+Title: The Blood of Bafalgar
+Giver: Shura
+Time: Any
+Area: Tephra Cave, Bafalgar Tomb
+
+
+Title: The Path of Bafalgar
+Giver: Shura
+Time: Any
+Area: Tephra Cave, Bafalgar Tomb
+
+
+Title: The Coffin of Bafalgar
+Giver: Shura
+Time: Any
+Area: Tephra Cave, Bafalgar Tomb
+
+
+Title: The Gratitude of Bafalgar
+Giver: Shura
+Time: Any
+Area: Tephra Cave, Bafalgar Tomb
+
+
+Title: A Flower for a Rose
+Giver: Dulland
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+
+
+Title: Battling Brutes
+Giver: Dulland
+Time: 10 AM
+Area: Bionis’ Leg, Refugee Camp
+
+
+Title: Supplies for Satorl
+Giver: Elior
+Time: 10 PM
+Area: Bionis’ Leg, Refugee Camp
