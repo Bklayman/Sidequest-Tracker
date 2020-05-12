@@ -7,18 +7,18 @@
 
 class QuestList{
 private:
-  std::vector<Quest> quests;
-  std::vector<Quest> questGarbage;
+  std::vector<Quest*> quests;
+  std::vector<Quest*> questGarbage;
   std::vector<std::string> storyPoints;
   std::vector<std::string> storyPointGarbage;
 
 public:
 
-  std::vector<Quest> getQuests(){
+  std::vector<Quest*> getQuests(){
     return quests;
   }
 
-  std::vector<Quest> getQuestGarbage(){
+  std::vector<Quest*> getQuestGarbage(){
     return questGarbage;
   }
 
@@ -30,12 +30,12 @@ public:
     return storyPointGarbage;
   }
 
-  void addQuest(Quest addedQuest){
+  void addQuest(Quest* addedQuest){
     quests.push_back(addedQuest);
   }
 
   void removeQuest(int index){
-    Quest removedQuest = quests[index];
+    Quest* removedQuest = quests[index];
     quests.erase(quests.begin() + index);
     questGarbage.push_back(removedQuest);
   }
@@ -51,7 +51,7 @@ public:
   }
 
   void reuseQuest(int indexToUse, int indexToAdd){
-    Quest reusedQuest = questGarbage[indexToUse];
+    Quest* reusedQuest = questGarbage[indexToUse];
     questGarbage.erase(questGarbage.begin() + indexToUse);
     quests.insert(quests.begin() + indexToAdd, reusedQuest);
   }
@@ -64,7 +64,7 @@ public:
 
   void printAll(){
     for(int i = 0; i < quests.size(); i++){
-      quests[i].printQuest();
+      quests[i]->printQuest();
       std::cout << std::endl;
     }
   }

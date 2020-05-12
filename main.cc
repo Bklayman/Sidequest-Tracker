@@ -7,6 +7,16 @@
 #include "quest.hh"
 #include "questList.hh"
 
+std::string trim(std::string originalString){
+  while(originalString.substr(0, 1) == " "){
+    originalString = originalString.substr(1, originalString.length() - 1);
+  }
+  while(originalString.substr(originalString.length() - 1, 1) == " "){
+    originalString = originalString.substr(0, originalString.length() - 1);
+  }
+  return originalString;
+}
+
 QuestList* getQuestList(char* fileName, std::string baseOrSave){
   std::ifstream file;
   file.open(fileName);
@@ -21,17 +31,48 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
     bool readSuccess = true;
     if(!(std::getline(file, fileLine))){
       readSuccess = false;
+    } else {
+      fileLine = trim(fileLine);
     }
     while(readSuccess){
-      std::cout << fileLine << std::endl;
       if(fileLine.substr(0, 1) == "-"){
         storyPointNum++;
         quests->addStoryPoint(fileLine.substr(1, fileLine.length() - 1));
+        if(!(std::getline(file, fileLine))){
+          readSuccess = false;
+        } else {
+          fileLine = trim(fileLine);
+        }
       } else {
-        //TODO: Create Quest
-      }
-      if(!(std::getline(file, fileLine))){
-        readSuccess = false;
+        Quest* curQuest = new Quest();
+        curQuest->setStoryPoint(storyPointNum);
+        bool sameQuest = true;
+        while(sameQuest){
+          int spacePlace = fileLine.find(" ");
+          if(spacePlace == -1 && fileLine.length() != 1){
+            curQuest->addBool(fileLine);
+          } else if(fileLine.length() != 1){
+            std::string word1 = fileLine.substr(0, spacePlace);
+            std::string word2 = fileLine.substr(spacePlace + 1, fileLine.length() - spacePlace - 1);
+            if(word1.substr(word1.length() - 1, 1) == ":"){
+              word1 = word1.substr(0, word1.length() - 1);
+            }
+            curQuest->addValue(word2, word1);
+          }
+          if(!(std::getline(file, fileLine))){
+            readSuccess = false;
+          }
+          if(readSuccess){
+            fileLine = trim(fileLine);
+            if(fileLine.substr(0, 1) == "-" || fileLine.substr(0, 5) == "Title"){
+              sameQuest = false;
+              quests->addQuest(curQuest);
+            }
+          } else {
+            sameQuest = false;
+            quests->addQuest(curQuest);
+          }
+        }
       }
     }
   } else {
