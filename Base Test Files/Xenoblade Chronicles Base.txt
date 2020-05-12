@@ -1,4 +1,4 @@
-﻿-Enter Colony 9
+-Enter Colony 9
 
 
 Title: Collection 1
@@ -1818,7 +1818,7 @@ Time: Any
 Area: Eryth Sea, Syrath Lighthouse
 
 
--Reach Valek Mountain (After Prison Island Events)-
+-Reach Valek Mountain (After Prison Island Events)
 
 
 Title: Bridge Repair

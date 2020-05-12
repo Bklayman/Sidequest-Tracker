@@ -64,7 +64,8 @@ public:
 
   void printAll(){
     for(int i = 0; i < quests.size(); i++){
-      std::cout << quests[i].getTitle() << std::endl;
+      quests[i].printQuest();
+      std::cout << std::endl;
     }
   }
 
