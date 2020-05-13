@@ -89,11 +89,64 @@ void help(){
   std::cout << "List of actions:\n\thelp / h: Get this list\n\texit / e: Exit this program (does not save progress)\n\tsave / s: Go to save menu\n\tstory / st: Go to story point menu\n\tquest / q: Go to quest menu\n\tprint / p: Go to print menu" << std::endl;
 }
 
+void save(QuestList* quests){
+  //TODO
+}
+
+void saveMenu(QuestList* quests){
+  bool doneSaving = false;
+  while(!doneSaving){
+    std::cout << "Would you like to save your progress? (yes / no)" << std::endl;
+    std::string answer;
+    std::cin >> answer;
+    if(answer == "yes"){
+      save(quests);
+      doneSaving = true;
+    } else if (answer == "no"){
+      doneSaving = true;
+    } else {
+      std::cout << "Invalid answer given." << std::endl;
+    }
+  }
+}
+
+void storyPointMenu(QuestList* quests){
+  //TODO
+}
+
+void questMenu(QuestList* quests){
+  //TODO
+}
+
+void printMenu(QuestList* quests){
+  //TODO
+}
+
 //Executes the action desired from the main menu
 bool takeAction(int code, QuestList* quests){
   switch(code){
+    case -1:
+      std::cout << "Invalid action. Use help or h for a list of actions." << std::endl;
+      break;
     case 1:
       help();
+      break;
+    case 2:
+      return true;
+    case 3:
+      saveMenu(quests);
+      break;
+    case 4:
+      storyPointMenu(quests);
+      break;
+    case 5:
+      questMenu(quests);
+      break;
+    case 6:
+      printMenu(quests);
+      break;
+    default:
+      std::cout << "Error: Invalid action code given." << std::endl;
       break;
   }
   //TODO Make this go to every action

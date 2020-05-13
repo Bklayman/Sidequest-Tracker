@@ -66,10 +66,13 @@ public:
   }
 
   //Moves a story point from storyPointGarbage to storyPoints.
-  void reuseStoryPoint(int indexToUse, int indexToAdd){
-    std::string reusedStoryPoint = storyPointGarbage[indexToUse];
-    storyPointGarbage.erase(storyPointGarbage.begin() + indexToUse);
-    storyPoints.insert(storyPoints.begin() + indexToAdd, reusedStoryPoint);
+  //If this story point is not the most recently deleted story point, all story points after will also be moved.
+  void reuseStoryPoint(int indexToUse){
+    for(int i = storyPointGarbage.size() - 1; i >= indexToUse; i++){
+      std::string reusedStoryPoint = storyPointGarbage[i];
+      storyPointGarbage.erase(storyPointGarbage.begin() + i);
+      storyPoints.insert(storyPoints.begin(), reusedStoryPoint);
+    }
   }
 
   //Prints all information for every quest in quests.
