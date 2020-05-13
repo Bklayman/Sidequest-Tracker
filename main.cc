@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <locale>
 #include <sstream>
 #include <string>
 #include <vector>
@@ -7,6 +8,7 @@
 #include "quest.hh"
 #include "questList.hh"
 
+//Removes spaces at the beginning and end of a string
 std::string trim(std::string originalString){
   while(originalString.substr(0, 1) == " "){
     originalString = originalString.substr(1, originalString.length() - 1);
@@ -17,6 +19,7 @@ std::string trim(std::string originalString){
   return originalString;
 }
 
+//Gets the quest list associated with a base or save file
 QuestList* getQuestList(char* fileName, std::string baseOrSave){
   std::ifstream file;
   file.open(fileName);
@@ -81,6 +84,51 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
   return quests;
 }
 
+//Prints a list of the possible actions to take in the main menu
+void help(){
+  std::cout << "List of actions:\n\thelp / h: Get this list\n\texit / e: Exit this program (does not save progress)\n\tsave / s: Go to save menu\n\tstory / st: Go to story point menu\n\tquest / q: Go to quest menu\n\tprint / p: Go to print menu" << std::endl;
+}
+
+//Executes the action desired from the main menu
+bool takeAction(int code, QuestList* quests){
+  switch(code){
+    case 1:
+      help();
+      break;
+  }
+  //TODO Make this go to every action
+  return false;
+}
+
+//Checks to see if a given action at the main menu associates with a possible action (not case sensitive). Returns -1 if none are found.
+//All codes should be self-explainable
+int checkActions(std::string caseAction){
+  std::locale loc;
+  std::string action;
+  for(std::string::size_type i = 0; i < caseAction.length(); i++){
+    action += std::tolower(caseAction[i], loc);
+  }
+  if(action == "help" || action == "h"){
+    return 1;
+  }
+  if(action == "exit" || action == "e"){
+    return 2;
+  }
+  if(action == "save" || action == "s"){
+    return 3;
+  }
+  if(action == "story" || action == "st"){
+    return 4;
+  }
+  if(action == "quest" || action == "q"){
+    return 5;
+  }
+  if(action == "print" || action == "p"){
+    return 6;
+  }
+  return -1;
+}
+
 int main(int argc, char** argv){
   if(argc != 2){
     std::cout << "Usage: ./main [Base .txt file / Saved .txt file]" << std::endl;
@@ -98,5 +146,11 @@ int main(int argc, char** argv){
     }
   }
   QuestList* quests = getQuestList(argv[1], answer);
-  quests->printAll();
+  bool wantExit = false;
+  while(!wantExit){
+    std::cout << "Enter what action you would like to take (type 'help' or 'h' for help)" << std::endl;
+    std::cin >> answer;
+    int actionCode = checkActions(answer);
+    wantExit = takeAction(actionCode, quests);
+  }
 }
