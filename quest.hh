@@ -70,6 +70,18 @@ public:
     return storyPoint;
   }
 
+  std::vector<std::string> getValues(){
+    return values;
+  }
+
+  std::vector<std::string> getValueCategories(){
+    return valueCategories;
+  }
+
+  std::vector<std::string> getBools(){
+    return bools;
+  }
+
 };
 
 #endif

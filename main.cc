@@ -29,6 +29,7 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
   }
   std::string fileLine;
   QuestList* quests = new QuestList();
+  //Loads info from base file
   if(baseOrSave == "1"){
     int storyPointNum = 0;
     bool readSuccess = true;
@@ -78,6 +79,7 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
         }
       }
     }
+  //Loads info from save file
   } else {
     //TODO: Load Save
   }
@@ -89,10 +91,80 @@ void help(){
   std::cout << "List of actions:\n\thelp / h: Get this list\n\texit / e: Exit this program (does not save progress)\n\tsave / s: Go to save menu\n\tstory / st: Go to story point menu\n\tquest / q: Go to quest menu\n\tprint / p: Go to print menu" << std::endl;
 }
 
+//Saves data to a specified file. Requirements are shown in the README.
 void save(QuestList* quests){
-  //TODO
+  std::cout << "What would you like to name your file? (This will overwrite any existing file with the same name)" << std::endl;
+  std::string answer;
+  std::cin >> answer;
+  if(answer.substr(answer.length() - 4, 4) != ".txt"){
+    answer += ".txt";
+  }
+  std::string saveText = "";
+  //Saves quests
+  std::vector<Quest*> questsList = quests->getQuests();
+  for(int i = 0; i < questsList.size(); i++){
+    saveText+= "..+!L";
+    std::vector<std::string> curValues = questsList[i]->getValues();
+    for(int j = 0; j < curValues.size(); j++){
+      saveText+= "..+!A";
+      saveText+= curValues[j];
+    }
+    std::vector<std::string> curCategories = questsList[i]->getValueCategories();
+    for(int j = 0; j < curCategories.size(); j++){
+      saveText+= "..+!W";
+      saveText+= curCategories[j];
+    }
+    std::vector<std::string> curBools = questsList[i]->getBools();
+    for(int j = 0; j < curBools.size(); j++){
+      saveText+= "..+!B";
+      saveText+= curBools[j];
+    }
+    std::string textToAdd = "..+!U" + std::to_string(questsList[i]->getStoryPoint());
+    saveText+= textToAdd;
+  }
+  //saves garbage quests
+  std::vector<Quest*> questsGarbageList = quests->getQuestGarbage();
+  for(int i = 0; i < questsGarbageList.size(); i++){
+    saveText+= "..-!Y";
+    std::vector<std::string> curValues = questsGarbageList[i]->getValues();
+    for(int j = 0; j < curValues.size(); j++){
+      saveText+= "..+!A";
+      saveText+= curValues[j];
+    }
+    std::vector<std::string> curCategories = questsGarbageList[i]->getValueCategories();
+    for(int j = 0; j < curCategories.size(); j++){
+      saveText+= "..+!W";
+      saveText+= curCategories[j];
+    }
+    std::vector<std::string> curBools = questsGarbageList[i]->getBools();
+    for(int j = 0; j < curBools.size(); j++){
+      saveText+= "..+!B";
+      saveText+= curBools[j];
+    }
+    std::string textToAdd = "..+!U" + std::to_string(questsGarbageList[i]->getStoryPoint());
+    saveText+= textToAdd;
+  }
+  //Saves story points
+  std::vector<std::string> storyPoints = quests->getStoryPoints();
+  for(int i = 0; i < storyPoints.size(); i++){
+    saveText+= "..*!S";
+    saveText+= storyPoints[i];
+  }
+  //Saves garbage story points
+  std::vector<std::string> storyPointsGarbage = quests->getStoryPointGarbage();
+  for(int i = 0; i < storyPointsGarbage.size(); i++){
+    saveText+= "..*!D";
+    saveText+= storyPointsGarbage[i];
+  }
+  //Saves everything to specified file
+  std::ofstream file;
+  answer = "Save_Files/" + answer;
+  file.open(answer);
+  file << saveText;
+  file.close();
 }
 
+//Asks the user how to save
 void saveMenu(QuestList* quests){
   bool doneSaving = false;
   while(!doneSaving){
@@ -118,8 +190,28 @@ void questMenu(QuestList* quests){
   //TODO
 }
 
+//Asks the user what to print
 void printMenu(QuestList* quests){
-  //TODO
+  bool donePrinting = false;
+  while(!donePrinting){
+    std::cout << "Would you like to print all quest information (1) or only one information category (2)?" << std::endl;
+    std::string answer;
+    std::cin >> answer;
+    if(answer == "1"){
+      quests->printOpen();
+    } else if(answer == "2"){
+      std::cout << "What category would you like to print by?" << std::endl;
+      std::cin >> answer;
+      quests->printCategory(answer);
+    } else {
+      std::cout << "That is not an accepted input." << std::endl;
+    }
+    std::cout << "Would you like to return to the main menu? (yes/no)" << std::endl;
+    std::cin >> answer;
+    if(answer == "yes"){
+      donePrinting = !donePrinting;
+    }
+  }
 }
 
 //Executes the action desired from the main menu
@@ -149,7 +241,6 @@ bool takeAction(int code, QuestList* quests){
       std::cout << "Error: Invalid action code given." << std::endl;
       break;
   }
-  //TODO Make this go to every action
   return false;
 }
 
@@ -187,6 +278,7 @@ int main(int argc, char** argv){
     std::cout << "Usage: ./main [Base .txt file / Saved .txt file]" << std::endl;
     exit(0);
   }
+  //Gets user input on the type of file used
   std::cout << "Is this file a Base or a Save? (1 or 2)" << std::endl;
   bool validAnswer = false;
   std::string answer;
@@ -198,6 +290,7 @@ int main(int argc, char** argv){
       std::cout << "Please enter either 1 (Base) or 2 (Save)." << std::endl;
     }
   }
+  //Loads the file and uses the main menu to get user input and execute that input.
   QuestList* quests = getQuestList(argv[1], answer);
   bool wantExit = false;
   while(!wantExit){

@@ -100,6 +100,14 @@ public:
     }
   }
 
+  //Prints each quest's information for category.
+  void printCategory(std::string category){
+    std::string notIncluded = "";
+    for(int i = 0; i < quests.size(); i++){
+      quests[i]->printQuest(category);
+    }
+  }
+
 };
 
 #endif
