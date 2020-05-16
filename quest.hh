@@ -18,6 +18,14 @@ public:
     valueCategories.push_back(valueCategory);
   }
 
+  void addValue(std::string value){
+    values.push_back(value);
+  }
+
+  void addValueCategory(std::string valueCategory){
+    valueCategories.push_back(valueCategory);
+  }
+
   //Adds a bool value to bools
   void addBool(std::string boolValue){
     bools.push_back(boolValue);

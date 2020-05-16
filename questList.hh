@@ -39,6 +39,10 @@ public:
     quests.push_back(addedQuest);
   }
 
+  void addQuestGarbage(Quest* garbage){
+    questGarbage.push_back(garbage);
+  }
+
   //Moves a quest from quests to questGarbage.
   void removeQuest(int index){
     Quest* removedQuest = quests[index];
@@ -49,6 +53,10 @@ public:
   //Adds a story point to storyPoints.
   void addStoryPoint(std::string addedPoint){
     storyPoints.push_back(addedPoint);
+  }
+
+  void addGarbageStoryPoint(std::string addedGarbagePoint){
+    storyPointGarbage.push_back(addedGarbagePoint);
   }
 
   //Moves a story point from storyPoints to storyPointGarbage.
