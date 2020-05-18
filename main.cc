@@ -88,8 +88,14 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
       saveInfo+= " " + info;
     }
     int questStart = saveInfo.find("..+!L");
+    bool foundQuest = false;
     while(questStart != -1){
-      saveInfo = saveInfo.substr(5, saveInfo.length() - 5);
+      if(foundQuest){
+        saveInfo = saveInfo.substr(5, saveInfo.length() - 5);
+      } else {
+        saveInfo = saveInfo.substr(6, saveInfo.length() - 5);
+      foundQuest = !foundQuest;
+      }
       Quest* curQuest = new Quest();
       int valueStart = saveInfo.find("..+!A");
       int categoryStart = saveInfo.find("..+!W");
@@ -102,6 +108,7 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
           saveInfo = saveInfo.substr(nextValueStart, saveInfo.length() - nextValueStart);
         } else {
           std::string valueName = saveInfo.substr(5, categoryStart - 5);
+          std::cout << "Value Name: " << valueName << std::endl;
           curQuest->addValue(valueName);
           saveInfo = saveInfo.substr(categoryStart, saveInfo.length() - categoryStart);
         }
@@ -120,10 +127,13 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
         int nextCategoryStart = saveInfo.find("..+!W", categoryStart + 1);
         if(nextCategoryStart != -1 && nextCategoryStart < garbageBefore){
           std::string categoryName = saveInfo.substr(5, nextCategoryStart - 5);
+          std::cout << "Category Name: " << categoryName << std::endl;
           curQuest->addValueCategory(categoryName);
           saveInfo = saveInfo.substr(nextCategoryStart, saveInfo.length() - nextCategoryStart);
+          garbageBefore-= nextCategoryStart;
         } else {
           std::string categoryName = saveInfo.substr(5, garbageBefore - 5);
+          std::cout << "Category Name: " << categoryName << std::endl;
           curQuest->addValueCategory(categoryName);
           saveInfo = saveInfo.substr(garbageBefore, saveInfo.length() - garbageBefore);
         }
@@ -133,10 +143,12 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
         int nextBoolStart = saveInfo.find("..+!B", boolStart + 1);
         if(nextBoolStart == -1 || nextBoolStart > questSPStart){
           std::string boolName = saveInfo.substr(5, questSPStart - 5);
+          std::cout << "Bool Name: " << boolName << std::endl;
           curQuest->addBool(boolName);
           saveInfo = saveInfo.substr(questSPStart, saveInfo.length() - questSPStart);
         } else {
           std::string boolName = saveInfo.substr(5, nextBoolStart - 5);
+          std::cout << "Bool Name: " << boolName << std::endl;
           curQuest->addBool(boolName);
           saveInfo = saveInfo.substr(nextBoolStart, saveInfo.length() - nextBoolStart);
         }
@@ -152,9 +164,7 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
       } else {
         std::string storyPointName = saveInfo.substr(5, nextQuestStart - 5);
         std::cout << "Story Point Num: " << storyPointName << std::endl;
-        std::cout << "Here" << std::endl;
         curQuest->setStoryPoint(std::stoi(storyPointName));
-        std::cout << "Here2" << std::endl;
         saveInfo = saveInfo.substr(nextQuestStart, saveInfo.length() - nextQuestStart);
       }
       quests->addQuest(curQuest);
