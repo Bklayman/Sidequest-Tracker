@@ -81,7 +81,6 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
     }
   //Loads info from save file
   } else {
-    //TODO: Load Save
     std::string saveInfo = "";
     std::string info;
     while(file >> info){
@@ -99,7 +98,7 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
       Quest* curQuest = new Quest();
       int valueStart = saveInfo.find("..+!A");
       int categoryStart = saveInfo.find("..+!W");
-      while(valueStart < categoryStart){
+      while(valueStart < categoryStart && valueStart != -1){
         int nextValueStart = saveInfo.find("..+!A", valueStart + 1);
         if(nextValueStart != -1 && nextValueStart < categoryStart){
           std::string valueName = saveInfo.substr(5, nextValueStart - 5);
@@ -139,6 +138,8 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
         }
         categoryStart = saveInfo.find("..+!W");
       }
+      questSPStart = saveInfo.find("..+!U");
+      boolStart = saveInfo.find("..+!B");
       while(boolStart != -1 && boolStart < questSPStart){
         int nextBoolStart = saveInfo.find("..+!B", boolStart + 1);
         if(nextBoolStart == -1 || nextBoolStart > questSPStart){
@@ -153,14 +154,31 @@ QuestList* getQuestList(char* fileName, std::string baseOrSave){
           saveInfo = saveInfo.substr(nextBoolStart, saveInfo.length() - nextBoolStart);
         }
         boolStart = saveInfo.find("..+!B");
+        questSPStart = saveInfo.find("..+!U");
       }
       int nextQuestStart = saveInfo.find("..+!L");
       if(nextQuestStart == -1){
         int garbageQuestStart = saveInfo.find("..-!Y");
-        std::string storyPointName = saveInfo.substr(5, garbageQuestStart - 5);
-        std::cout << "Story Point Num: " << storyPointName << std::endl;
-        curQuest->setStoryPoint(std::stoi(storyPointName));
-        saveInfo = saveInfo.substr(garbageQuestStart, saveInfo.length() - garbageQuestStart);
+        //Breaks Here
+        if(garbageQuestStart != -1){
+          std::string storyPointName = saveInfo.substr(5, garbageQuestStart - 5);
+          std::cout << "Story Point Num: " << storyPointName << std::endl;
+          curQuest->setStoryPoint(std::stoi(storyPointName));
+          saveInfo = saveInfo.substr(garbageQuestStart, saveInfo.length() - garbageQuestStart);
+        } else {
+          int storyPointStart = saveInfo.find("..*!S");
+          if(storyPointStart != -1){
+            std::string storyPointName = saveInfo.substr(5, storyPointStart - 5);
+            std::cout << "Stpry Point Num: " << storyPointName << std::endl;
+            curQuest->setStoryPoint(std::stoi(storyPointName));
+            saveInfo = saveInfo.substr(storyPointStart, saveInfo.length() - storyPointStart);
+          } else {
+            std::string storyPointName = saveInfo.substr(5, saveInfo.length() - 5);
+            std::cout << "Stpry Point Num: " << storyPointName << std::endl;
+            curQuest->setStoryPoint(std::stoi(storyPointName));
+            saveInfo = "";
+          }
+        }
       } else {
         std::string storyPointName = saveInfo.substr(5, nextQuestStart - 5);
         std::cout << "Story Point Num: " << storyPointName << std::endl;
@@ -284,24 +302,30 @@ void save(QuestList* quests){
   //Saves quests
   std::vector<Quest*> questsList = quests->getQuests();
   for(int i = 1; i < questsList.size(); i++){
-    saveText+= "..+!L";
     std::vector<std::string> curValues = questsList[i]->getValues();
-    for(int j = 0; j < curValues.size(); j++){
-      saveText+= "..+!A";
-      saveText+= curValues[j];
+    bool emptyQuest = false;
+    if(curValues.size() == 0){
+      emptyQuest = !emptyQuest;
     }
-    std::vector<std::string> curCategories = questsList[i]->getValueCategories();
-    for(int j = 0; j < curCategories.size(); j++){
-      saveText+= "..+!W";
-      saveText+= curCategories[j];
+    if(!emptyQuest){
+      saveText+= "..+!L";
+      for(int j = 0; j < curValues.size(); j++){
+        saveText+= "..+!A";
+        saveText+= curValues[j];
+      }
+      std::vector<std::string> curCategories = questsList[i]->getValueCategories();
+      for(int j = 0; j < curCategories.size(); j++){
+        saveText+= "..+!W";
+        saveText+= curCategories[j];
+      }
+      std::vector<std::string> curBools = questsList[i]->getBools();
+      for(int j = 0; j < curBools.size(); j++){
+        saveText+= "..+!B";
+        saveText+= curBools[j];
+      }
+      std::string textToAdd = "..+!U" + std::to_string(questsList[i]->getStoryPoint());
+      saveText+= textToAdd;
     }
-    std::vector<std::string> curBools = questsList[i]->getBools();
-    for(int j = 0; j < curBools.size(); j++){
-      saveText+= "..+!B";
-      saveText+= curBools[j];
-    }
-    std::string textToAdd = "..+!U" + std::to_string(questsList[i]->getStoryPoint());
-    saveText+= textToAdd;
   }
   //saves garbage quests
   std::vector<Quest*> questsGarbageList = quests->getQuestGarbage();
