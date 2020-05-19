@@ -20,6 +20,27 @@ public:
     return originalString;
   }
 
+  //Addsa portion of saveInfo to a given Quest category. Returns the rest of saveInfo.
+  static std::string addToQuest(int nameLocation, int valueIndex, std::string saveInfo, Quest* curQuest){
+    std::string categoryName = saveInfo.substr(5, nameLocation - 5);
+    saveInfo = saveInfo.substr(nameLocation, saveInfo.length() - nameLocation);
+    switch(valueIndex){
+      case 0:
+        curQuest->addValue(categoryName);
+        break;
+      case 1:
+        curQuest->addValueCategory(categoryName);
+        break;
+      case 2:
+        curQuest->addBool(categoryName);
+        break;
+      case 3:
+        curQuest->setStoryPoint(std::stoi(categoryName));
+        break;
+    }
+    return saveInfo;
+  }
+
   //Gets the quest list associated with a base or save file
   static QuestList* getQuestList(char* fileName, std::string baseOrSave){
     std::ifstream file;
@@ -89,6 +110,7 @@ public:
       }
       int questStart = saveInfo.find("..+!L");
       bool foundQuest = false;
+      //Saves quests
       while(questStart != -1){
         if(foundQuest){
           saveInfo = saveInfo.substr(5, saveInfo.length() - 5);
@@ -102,13 +124,9 @@ public:
         while(valueStart < categoryStart && valueStart != -1){
           int nextValueStart = saveInfo.find("..+!A", valueStart + 1);
           if(nextValueStart != -1 && nextValueStart < categoryStart){
-            std::string valueName = saveInfo.substr(5, nextValueStart - 5);
-            curQuest->addValue(valueName);
-            saveInfo = saveInfo.substr(nextValueStart, saveInfo.length() - nextValueStart);
+            saveInfo = addToQuest(nextValueStart, 0, saveInfo, curQuest);
           } else {
-            std::string valueName = saveInfo.substr(5, categoryStart - 5);
-            curQuest->addValue(valueName);
-            saveInfo = saveInfo.substr(categoryStart, saveInfo.length() - categoryStart);
+            saveInfo = addToQuest(categoryStart, 0, saveInfo, curQuest);
           }
           valueStart = saveInfo.find("..+!A");
           categoryStart = saveInfo.find("..+!W");
@@ -124,14 +142,10 @@ public:
         while(categoryStart != -1 && categoryStart < garbageBefore){
           int nextCategoryStart = saveInfo.find("..+!W", categoryStart + 1);
           if(nextCategoryStart != -1 && nextCategoryStart < garbageBefore){
-            std::string categoryName = saveInfo.substr(5, nextCategoryStart - 5);
-            curQuest->addValueCategory(categoryName);
-            saveInfo = saveInfo.substr(nextCategoryStart, saveInfo.length() - nextCategoryStart);
+            saveInfo = addToQuest(nextCategoryStart, 1, saveInfo, curQuest);
             garbageBefore-= nextCategoryStart;
           } else {
-            std::string categoryName = saveInfo.substr(5, garbageBefore - 5);
-            curQuest->addValueCategory(categoryName);
-            saveInfo = saveInfo.substr(garbageBefore, saveInfo.length() - garbageBefore);
+            saveInfo = addToQuest(garbageBefore, 1, saveInfo, curQuest);
           }
           categoryStart = saveInfo.find("..+!W");
         }
@@ -140,13 +154,9 @@ public:
         while(boolStart != -1 && boolStart < questSPStart){
           int nextBoolStart = saveInfo.find("..+!B", boolStart + 1);
           if(nextBoolStart == -1 || nextBoolStart > questSPStart){
-            std::string boolName = saveInfo.substr(5, questSPStart - 5);
-            curQuest->addBool(boolName);
-            saveInfo = saveInfo.substr(questSPStart, saveInfo.length() - questSPStart);
+            saveInfo = addToQuest(questSPStart, 2, saveInfo, curQuest);
           } else {
-            std::string boolName = saveInfo.substr(5, nextBoolStart - 5);
-            curQuest->addBool(boolName);
-            saveInfo = saveInfo.substr(nextBoolStart, saveInfo.length() - nextBoolStart);
+            saveInfo = addToQuest(nextBoolStart, 2, saveInfo, curQuest);
           }
           boolStart = saveInfo.find("..+!B");
           questSPStart = saveInfo.find("..+!U");
@@ -155,31 +165,25 @@ public:
         if(nextQuestStart == -1){
           int garbageQuestStart = saveInfo.find("..-!Y");
           if(garbageQuestStart != -1){
-            std::string storyPointName = saveInfo.substr(5, garbageQuestStart - 5);
-            curQuest->setStoryPoint(std::stoi(storyPointName));
-            saveInfo = saveInfo.substr(garbageQuestStart, saveInfo.length() - garbageQuestStart);
+            saveInfo = addToQuest(garbageQuestStart, 3, saveInfo, curQuest);
           } else {
             int storyPointStart = saveInfo.find("..*!S");
             if(storyPointStart != -1){
-              std::string storyPointName = saveInfo.substr(5, storyPointStart - 5);
-              curQuest->setStoryPoint(std::stoi(storyPointName));
-              saveInfo = saveInfo.substr(storyPointStart, saveInfo.length() - storyPointStart);
+              saveInfo = addToQuest(storyPointStart, 3, saveInfo, curQuest);
             } else {
-              std::string storyPointName = saveInfo.substr(5, saveInfo.length() - 5);
-              curQuest->setStoryPoint(std::stoi(storyPointName));
+              addToQuest(saveInfo.length(), 3, saveInfo, curQuest);
               saveInfo = "";
             }
           }
         } else {
-          std::string storyPointName = saveInfo.substr(5, nextQuestStart - 5);
-          curQuest->setStoryPoint(std::stoi(storyPointName));
-          saveInfo = saveInfo.substr(nextQuestStart, saveInfo.length() - nextQuestStart);
+          saveInfo = addToQuest(nextQuestStart, 3, saveInfo, curQuest);
         }
         quests->addQuest(curQuest);
         questStart = saveInfo.find("..+!L");
       }
       int nextGarbageQuest = saveInfo.find("..-!Y");
       foundQuest = false;
+      //Saves garbage quests
       while(nextGarbageQuest != -1){
         if(foundQuest){
           saveInfo = saveInfo.substr(5, saveInfo.length() - 5);
@@ -193,13 +197,9 @@ public:
         while(valueStart < categoryStart && valueStart != -1){
           int nextValueStart = saveInfo.find("..+!A", valueStart + 1);
           if(nextValueStart != -1 && nextValueStart < categoryStart){
-            std::string valueName = saveInfo.substr(5, nextValueStart - 5);
-            curQuest->addValue(valueName);
-            saveInfo = saveInfo.substr(nextValueStart, saveInfo.length() - nextValueStart);
+            saveInfo = addToQuest(nextValueStart, 0, saveInfo, curQuest);
           } else {
-            std::string valueName = saveInfo.substr(5, categoryStart - 5);
-            curQuest->addValue(valueName);
-            saveInfo = saveInfo.substr(categoryStart, saveInfo.length() - categoryStart);
+            saveInfo = addToQuest(categoryStart, 0, saveInfo, curQuest);
           }
           valueStart = saveInfo.find("..+!A");
           categoryStart = saveInfo.find("..+!W");
@@ -215,14 +215,10 @@ public:
         while(categoryStart != -1 && categoryStart < garbageBefore){
           int nextCategoryStart = saveInfo.find("..+!W", categoryStart + 1);
           if(nextCategoryStart != -1 && nextCategoryStart < garbageBefore){
-            std::string categoryName = saveInfo.substr(5, nextCategoryStart - 5);
-            curQuest->addValueCategory(categoryName);
-            saveInfo = saveInfo.substr(nextCategoryStart, saveInfo.length() - nextCategoryStart);
+            saveInfo = addToQuest(nextCategoryStart, 1, saveInfo, curQuest);
             garbageBefore-= nextCategoryStart;
           } else {
-            std::string categoryName = saveInfo.substr(5, garbageBefore - 5);
-            curQuest->addValueCategory(categoryName);
-            saveInfo = saveInfo.substr(garbageBefore, saveInfo.length() - garbageBefore);
+            saveInfo = addToQuest(garbageBefore, 1, saveInfo, curQuest);
           }
           categoryStart = saveInfo.find("..+!W");
         }
@@ -231,39 +227,30 @@ public:
         while(boolStart != -1 && boolStart < questSPStart){
           int nextBoolStart = saveInfo.find("..+!B", boolStart + 1);
           if(nextBoolStart == -1 || nextBoolStart > questSPStart){
-            std::string boolName = saveInfo.substr(5, questSPStart - 5);
-            curQuest->addBool(boolName);
-            saveInfo = saveInfo.substr(questSPStart, saveInfo.length() - questSPStart);
+            saveInfo = addToQuest(questSPStart, 2, saveInfo, curQuest);
           } else {
-            std::string boolName = saveInfo.substr(5, nextBoolStart - 5);
-            curQuest->addBool(boolName);
-            saveInfo = saveInfo.substr(nextBoolStart, saveInfo.length() - nextBoolStart);
+            saveInfo = addToQuest(nextBoolStart, 2, saveInfo, curQuest);
           }
           boolStart = saveInfo.find("..+!B");
           questSPStart = saveInfo.find("..+!U");
         }
         int nextQuestStart = saveInfo.find("..-!Y");
-        //Fix this one for garbage quests
         if(nextQuestStart == -1){
           int storyPointStart = saveInfo.find("..*!S");
           if(storyPointStart != -1){
-            std::string storyPointName = saveInfo.substr(5, storyPointStart - 5);
-            curQuest->setStoryPoint(std::stoi(storyPointName));
-            saveInfo = saveInfo.substr(storyPointStart, saveInfo.length() - storyPointStart);
+            saveInfo = addToQuest(storyPointStart, 3, saveInfo, curQuest);
           } else {
-            std::string storyPointName = saveInfo.substr(5, saveInfo.length() - 5);
-            curQuest->setStoryPoint(std::stoi(storyPointName));
+            addToQuest(saveInfo.length(), 3, saveInfo, curQuest);
             saveInfo = "";
           }
         } else {
-          std::string storyPointName = saveInfo.substr(5, nextQuestStart - 5);
-          curQuest->setStoryPoint(std::stoi(storyPointName));
-          saveInfo = saveInfo.substr(nextQuestStart, saveInfo.length() - nextQuestStart);
+          saveInfo = addToQuest(nextQuestStart, 3, saveInfo, curQuest);
         }
         quests->addQuestGarbage(curQuest);
         nextGarbageQuest = saveInfo.find("..-!Y");
       }
       int storyPointStart = saveInfo.find("..*!S");
+      //Saves the story points
       while(storyPointStart != -1){
         int nextStoryPoint = saveInfo.find("..*!S", storyPointStart + 1);
         if(nextStoryPoint == -1){
@@ -283,6 +270,7 @@ public:
         storyPointStart = saveInfo.find("..*!S");
       }
       int garbageSPStart = saveInfo.find("..*!D");
+      //Saves the garbage story points
       while(garbageSPStart != -1){
         int nextGarbagePoint = saveInfo.find("..*!D", garbageSPStart + 1);
         if(nextGarbagePoint != -1){
