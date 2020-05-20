@@ -61,9 +61,11 @@ public:
 
   //Moves a story point from storyPoints to storyPointGarbage.
   void removeStoryPoint(int index){
-    std::string removedStoryPoint = storyPoints[index];
-    storyPoints.erase(storyPoints.begin() + index);
-    storyPointGarbage.push_back(removedStoryPoint);
+    for(int i = index; i >= 0; i--){
+      std::string removedStoryPoint = storyPoints[i];
+      storyPoints.erase(storyPoints.begin() + i);
+      storyPointGarbage.push_back(removedStoryPoint);
+    }
   }
 
   //Moves a quest from questGarbage to quests.
@@ -76,7 +78,7 @@ public:
   //Moves a story point from storyPointGarbage to storyPoints.
   //If this story point is not the most recently deleted story point, all story points after will also be moved.
   void reuseStoryPoint(int indexToUse){
-    for(int i = storyPointGarbage.size() - 1; i >= indexToUse; i++){
+    for(int i = storyPointGarbage.size() - 1; i >= indexToUse; i--){
       std::string reusedStoryPoint = storyPointGarbage[i];
       storyPointGarbage.erase(storyPointGarbage.begin() + i);
       storyPoints.insert(storyPoints.begin(), reusedStoryPoint);
@@ -94,7 +96,7 @@ public:
   //Prints all information for every avaliable quest in quests.
   void printOpen(){
     for(int i = 0; i < quests.size(); i++){
-      if(quests[i]->getStoryPoint() < storyPointGarbage.size()){
+      if(quests[i]->getStoryPoint() <= storyPointGarbage.size()){
         quests[i]->printQuest();
         std::cout << std::endl;
       }
@@ -104,7 +106,13 @@ public:
   //Prints all the story points (numbered).
   void printStoryPoints(){
     for(int i = 0; i < storyPoints.size(); i++){
-      std::cout << i + 1 << ". " << storyPoints[i] << std::endl;
+      std::cout << i << ". " << storyPoints[i] << std::endl;
+    }
+  }
+
+  void printStoryPointsGarbage(){
+    for(int i = 0; i < storyPointGarbage.size(); i++){
+      std::cout << i << ". " << storyPointGarbage[i] << std::endl;
     }
   }
 
@@ -114,6 +122,14 @@ public:
     for(int i = 0; i < quests.size(); i++){
       quests[i]->printQuest(category);
     }
+  }
+
+  int getStoryPointsSize(){
+    return storyPoints.size();
+  }
+
+  int getStoryPointGarbageSize(){
+    return storyPointGarbage.size();
   }
 
 };

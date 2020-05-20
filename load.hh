@@ -274,14 +274,15 @@ public:
       while(garbageSPStart != -1){
         int nextGarbagePoint = saveInfo.find("..*!D", garbageSPStart + 1);
         if(nextGarbagePoint != -1){
-          std::string garbagePointName = saveInfo.substr(5, saveInfo.length() - 5);
-          quests->addGarbageStoryPoint(garbagePointName);
-          saveInfo = "";
-        } else {
           std::string garbagePointName = saveInfo.substr(5, nextGarbagePoint - 5);
           quests->addGarbageStoryPoint(garbagePointName);
           saveInfo = saveInfo.substr(nextGarbagePoint, saveInfo.length() - nextGarbagePoint);
+        } else {
+          std::string garbagePointName = saveInfo.substr(5, saveInfo.length() - 5);
+          quests->addGarbageStoryPoint(garbagePointName);
+          saveInfo = "";
         }
+        garbageSPStart = saveInfo.find("..*!D");
       }
     }
     return quests;

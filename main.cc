@@ -15,8 +15,72 @@ void help(){
   std::cout << "List of actions:\n\thelp / h: Get this list\n\texit / e: Exit this program (does not save progress)\n\tsave / s: Go to save menu\n\tstory / st: Go to story point menu\n\tquest / q: Go to quest menu\n\tprint / p: Go to print menu" << std::endl;
 }
 
+int checkStoryPointAction(std::string action){
+  if(action == "1"){
+    return 1;
+  } else if (action == "2"){
+    return 2;
+  } else if (action == "3"){
+    return 3;
+  }
+  return -1;
+}
+
+int checkStoryPointChoice(std::string answer, int numStoryPoints){
+  int answerNum = 0;
+  try{
+    answerNum = std::stoi(answer);
+  } catch(std::exception& e){
+    std::cout << "Invalid answer." << std::endl;
+    return -1;
+  }
+  if(answerNum >= numStoryPoints){
+    std::cout << "Invalid answer." << std::endl;
+    return -1;
+  }
+  return answerNum;
+}
+
 void storyPointMenu(QuestList* quests){
-  //TODO
+  bool done = false;
+  while(!done){
+    std::cout << "Would you like to pass a story point (1), bring back a story point (2), or exit this menu (3)?" << std::endl;
+    std::string answer;
+    std::cin >> answer;
+    int actionNum = checkStoryPointAction(answer);
+    if(actionNum == -1){
+      std::cout << "Invalid response." << std::endl;
+    } else if (actionNum == 3){
+      done = !done;
+    } else if (actionNum == 2){
+      std::cout << "Which story point do you want to bring back? (Enter the number of the desired point)\nAny story point after the chosen point will also be passed." << std::endl;
+      quests->printStoryPointsGarbage();
+      std::cin >> answer;
+      int storyPointGarbageSize = quests->getStoryPointGarbageSize();
+      int answerNum = checkStoryPointChoice(answer, storyPointGarbageSize);
+      if(answerNum != -1){
+        quests->reuseStoryPoint(answerNum);
+      }
+    } else {
+      std::cout << "Which story point do you want to pass? (Enter the number of the desired point)\nAny story point before the chosen point will also be passed." << std::endl;
+      quests->printStoryPoints();
+      std::cin >> answer;
+      int numStoryPoints = quests->getStoryPointsSize();
+      int answerNum = checkStoryPointChoice(answer, numStoryPoints);
+      if(answerNum != -1){
+        quests->removeStoryPoint(answerNum);
+      }
+    }
+    if(!done){
+      std::cout << "Are you done moving story points? (yes/no)" << std::endl;
+      std::cin >> answer;
+      if(answer == "yes"){
+        done = !done;
+      } else if (answer != "no"){
+        std::cout << "Invalid answer." << std::endl;
+      }
+    }
+  }
 }
 
 void questMenu(QuestList* quests){
