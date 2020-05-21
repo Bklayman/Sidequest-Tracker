@@ -18,10 +18,12 @@ public:
     valueCategories.push_back(valueCategory);
   }
 
+  //Adds a value to this quest
   void addValue(std::string value){
     values.push_back(value);
   }
 
+  //Adds a value category to this quest
   void addValueCategory(std::string valueCategory){
     valueCategories.push_back(valueCategory);
   }
@@ -78,16 +80,34 @@ public:
     return storyPoint;
   }
 
+  //Getter function for values
   std::vector<std::string> getValues(){
     return values;
   }
 
+  //Getter function for value categories
   std::vector<std::string> getValueCategories(){
     return valueCategories;
   }
 
+  //Getter function for bools
   std::vector<std::string> getBools(){
     return bools;
+  }
+
+  //Changes the value at index to given value
+  void changeValue(int index, std::string value){
+    values[index] = value;
+  }
+
+  //Changes the category at index to given value
+  void changeCategory(int index, std::string category){
+    valueCategories[index] = category;
+  }
+
+  //Changes the bool at index to given value
+  void changeBool(int index, std::string name){
+    bools[index] = name;
   }
 
 };

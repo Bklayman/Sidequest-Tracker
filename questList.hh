@@ -39,6 +39,7 @@ public:
     quests.push_back(addedQuest);
   }
 
+  //Adds a calue to the garbage quests
   void addQuestGarbage(Quest* garbage){
     questGarbage.push_back(garbage);
   }
@@ -55,6 +56,7 @@ public:
     storyPoints.push_back(addedPoint);
   }
 
+  //Adds a value to the garbage story points
   void addGarbageStoryPoint(std::string addedGarbagePoint){
     storyPointGarbage.push_back(addedGarbagePoint);
   }
@@ -110,6 +112,7 @@ public:
     }
   }
 
+  //Prints the deleted story points
   void printStoryPointsGarbage(){
     for(int i = 0; i < storyPointGarbage.size(); i++){
       std::cout << i << ". " << storyPointGarbage[i] << std::endl;
@@ -124,10 +127,20 @@ public:
     }
   }
 
+  //Prints quests numbered from 0
+  void printNumberedQuests(){
+    for(int i = 0; i < quests.size(); i++){
+      std::vector<std::string> values = quests[i]->getValues();
+      std::cout << i << ": " << values[0] << std::endl;
+    }
+  }
+
+  //Getter function for the size of story points
   int getStoryPointsSize(){
     return storyPoints.size();
   }
 
+  //Getter function for the size of garbage story points
   int getStoryPointGarbageSize(){
     return storyPointGarbage.size();
   }

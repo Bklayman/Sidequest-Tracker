@@ -15,6 +15,7 @@ void help(){
   std::cout << "List of actions:\n\thelp / h: Get this list\n\texit / e: Exit this program (does not save progress)\n\tsave / s: Go to save menu\n\tstory / st: Go to story point menu\n\tquest / q: Go to quest menu\n\tprint / p: Go to print menu" << std::endl;
 }
 
+//Checks the answer when selecting actions in the story point menu
 int checkStoryPointAction(std::string action){
   if(action == "1"){
     return 1;
@@ -26,6 +27,7 @@ int checkStoryPointAction(std::string action){
   return -1;
 }
 
+//Checks the answer when selecting a story point
 int checkStoryPointChoice(std::string answer, int numStoryPoints){
   int answerNum = 0;
   try{
@@ -41,6 +43,7 @@ int checkStoryPointChoice(std::string answer, int numStoryPoints){
   return answerNum;
 }
 
+//Gives a menu for story point modification
 void storyPointMenu(QuestList* quests){
   bool done = false;
   while(!done){
@@ -83,8 +86,102 @@ void storyPointMenu(QuestList* quests){
   }
 }
 
+//Checks for a valid answer in the quest menu
+int getQuestAnswer(std::string answer){
+  int answerNum = -1;
+  try{
+    answerNum = std::stoi(answer);
+  } catch(std::exception& e){
+    std::cout << "Invalid answer." << std::endl;
+    return -1;
+  }
+  if(answerNum > 5 || answerNum < 1){
+    std::cout << "Invalid answer." << std::endl;
+    return -1;
+  }
+  return answerNum;
+}
+
+//Gives the menu for quest modification
 void questMenu(QuestList* quests){
-  //TODO
+  bool done = false;
+  while(!done){
+    std::cout << "Would you like to remove a quest (1), reuse a quest (2), edit a quest (3), or leave to the main menu (4)?" << std::endl;
+    std::string answer;
+    std::cin >> answer;
+    int answerNum = getQuestAnswer(answer);
+    switch(answerNum){
+      case 1: { //Removes a quest
+        //TODO
+        break;
+      }
+      case 2: {//Reuses a quest
+        //TODO
+        break;
+      }
+      case 3: {//Modifies a quest's information
+        bool questPicked = false;
+        while(!questPicked){
+          std::cout << "Which quest would you like to modify? (Use -1 for none)" << std::endl;
+          quests->printNumberedQuests();
+          std::cin >> answer;
+          bool isNum = true;
+          int questNum = -1;
+          try{
+            questNum = std::stoi(answer);
+          } catch(std::exception& e){
+            std::cout << "Invalid answer." << std::endl;
+            isNum = false;
+          }
+          std::vector<Quest*> questList = quests->getQuests();
+          if(isNum && (questNum < 0 || questNum >= quests->getQuests().size())){
+            std::cout << "Please enter a quest's number or -1." << std::endl;
+            isNum = false;
+          }
+          if(isNum){
+            questPicked = true;
+            if(questNum != -1){
+              bool doneEditing = false;
+              Quest* chosenQuest = questList[questNum];
+              while(!doneEditing){
+                chosenQuest->printQuest();
+                std::cout << "What would you like to edit? Enter either the value category you would like to edit or a boolean value you would like to add or remove. Capitalizations do matter." << std::endl;
+                std::cin >> answer;
+                //TODO
+                chosenQuest->printQuest();
+                bool answerGiven = false;
+                while(!answerGiven){
+                  std::cout << "Are you finished modifying this quest? (yes/no)" << std::endl;
+                  std::cin >> answer;
+                  if(answer == "yes"){
+                    answerGiven = true;
+                    doneEditing = true;
+                  } else if (answer == "no"){
+                    answerGiven = true;
+                  } else {
+                    std::cout << "Invalid answer." << std::endl;
+                  }
+                }
+              }
+            }
+          }
+        }
+        break;
+      }
+      case 4: //Exits the quest menu
+        done = !done;
+        break;
+    }
+    if(!done){
+      std::cout << "Are you finished editing quest information? (yes/no)" << std::endl;
+      std::cin >> answer;
+      if(answer == "yes"){
+        done = !done;
+      } else if(answer != "no"){
+        std::cout << "Invalid response." << std::endl;
+      }
+    }
+  }
 }
 
 //Asks the user what to print
