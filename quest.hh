@@ -33,6 +33,10 @@ public:
     bools.push_back(boolValue);
   }
 
+  void removeBool(int index){
+    bools.erase(bools.begin() + index);
+  }
+
   //Prints all details about a quest
   void printQuest(){
     for(int i = 0; i < values.size(); i++){
