@@ -70,7 +70,7 @@ public:
             int printedQuests = quests->printNumberedQuests();
             if(printedQuests != 0){
               std::cout << "Which quest(s) would you like to remove?\nUse space-separated numbers for multiple quests.\nEnter -1 to exit." << std::endl;
-              std::cin >> answer;
+              std::getline(std::cin, answer);
               std::vector<int> splitAnswer = splitRemoveQuestAnswer(answer);
               if(splitAnswer.size() != 0){
                 finishedRemoving = true;
@@ -96,7 +96,7 @@ public:
             int printedQuests = quests->printNumberedGarbageQuests();
             if(printedQuests != 0){
               std::cout << "Which quest(s) would you like to reuse?\nUse space-separated numbers for multiple quests.\nEnter -1 to exit." << std::endl;
-              std::cin >> answer;
+              std::getline(std::cin, answer);
               std::vector<int> splitAnswer = splitRemoveQuestAnswer(answer);
               if(splitAnswer.size() != 0){
                 finishedRemoving = true;
