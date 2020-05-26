@@ -128,11 +128,28 @@ public:
   }
 
   //Prints quests numbered from 0
-  void printNumberedQuests(){
+  int printNumberedQuests(){
+    int counter = 0;
     for(int i = 0; i < quests.size(); i++){
       std::vector<std::string> values = quests[i]->getValues();
-      std::cout << i << ": " << values[0] << std::endl;
+      if(values.size() > 0 && quests[i]->getStoryPoint() <= storyPointGarbage.size()){
+        std::cout << i << ": " << values[0] << std::endl;
+        counter++;
+      }
     }
+    return counter;
+  }
+
+  int printNumberedGarbageQuests(){
+    int counter = 0;
+    for(int i = 0; i < questGarbage.size(); i++){
+      std::vector<std::string> values = questGarbage[i]->getValues();
+      if(values.size() > 0){
+        counter++;
+        std::cout << i << ": " << values[0] << std::endl;
+      }
+    }
+    return counter;
   }
 
   //Getter function for the size of story points

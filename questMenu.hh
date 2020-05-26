@@ -67,20 +67,25 @@ public:
         case 1: { //Removes a quest
           bool finishedRemoving = false;
           while(!finishedRemoving){
-            quests->printNumberedQuests();
-            std::cout << "Which quest(s) would you like to remove?\nUse space-separated numbers for multiple quests.\nEnter -1 to exit." << std::endl;
-            std::cin >> answer;
-            std::vector<int> splitAnswer = splitRemoveQuestAnswer(answer);
-            if(splitAnswer.size() != 0){
-              finishedRemoving = true;
-              for(int i = 0; i < splitAnswer.size(); i++){
-                if(splitAnswer[i] < 0 || splitAnswer[i] >= splitAnswer.size()){
-                  finishedRemoving = false;
-                  std::cout << "Quest number " << i << ": " << splitAnswer[i] << " is invalid." << std::endl;
-                  break;
+            int printedQuests = quests->printNumberedQuests();
+            if(printedQuests != 0){
+              std::cout << "Which quest(s) would you like to remove?\nUse space-separated numbers for multiple quests.\nEnter -1 to exit." << std::endl;
+              std::cin >> answer;
+              std::vector<int> splitAnswer = splitRemoveQuestAnswer(answer);
+              if(splitAnswer.size() != 0){
+                finishedRemoving = true;
+                for(int i = 0; i < splitAnswer.size(); i++){
+                  if(splitAnswer[i] < 0 || splitAnswer[i] >= printedQuests){
+                    finishedRemoving = false;
+                    std::cout << "Quest number " << i << ": " << splitAnswer[i] << " is invalid." << std::endl;
+                    break;
+                  }
+                  quests->removeQuest(splitAnswer[i]);
                 }
-                quests->removeQuest(splitAnswer[i]);
               }
+            } else {
+              std::cout << "No quests can be removed. Move a story point to open new quests." << std::endl;
+              finishedRemoving = true;
             }
           }
           break;
@@ -88,20 +93,25 @@ public:
         case 2: {//Reuses a quest
           bool finishedRemoving = false;
           while(!finishedRemoving){
-            quests->printNumberedQuests();
-            std::cout << "Which quest(s) would you like to reuse?\nUse space-separated numbers for multiple quests.\nEnter -1 to exit." << std::endl;
-            std::cin >> answer;
-            std::vector<int> splitAnswer = splitRemoveQuestAnswer(answer);
-            if(splitAnswer.size() != 0){
-              finishedRemoving = true;
-              for(int i = 0; i < splitAnswer.size(); i++){
-                if(splitAnswer[i] < 0 || splitAnswer[i] >= splitAnswer.size()){
-                  finishedRemoving = false;
-                  std::cout << "Quest number " << i << ": " << splitAnswer[i] << " is invalid." << std::endl;
-                  break;
+            int printedQuests = quests->printNumberedGarbageQuests();
+            if(printedQuests != 0){
+              std::cout << "Which quest(s) would you like to reuse?\nUse space-separated numbers for multiple quests.\nEnter -1 to exit." << std::endl;
+              std::cin >> answer;
+              std::vector<int> splitAnswer = splitRemoveQuestAnswer(answer);
+              if(splitAnswer.size() != 0){
+                finishedRemoving = true;
+                for(int i = 0; i < splitAnswer.size(); i++){
+                  if(splitAnswer[i] < 0 || splitAnswer[i] >= printedQuests){
+                    finishedRemoving = false;
+                    std::cout << "Quest number " << i << ": " << splitAnswer[i] << " is invalid." << std::endl;
+                    break;
+                  }
+                  quests->reuseQuest(splitAnswer[i], 0);
                 }
-                quests->reuseQuest(splitAnswer[i], 0);
               }
+            } else {
+              finishedRemoving = true;
+              std::cout << "No quests can be reused. Remove other quests for reuse before returning." << std::endl;
             }
           }
           break;
@@ -110,70 +120,75 @@ public:
           bool questPicked = false;
           while(!questPicked){
             std::cout << "Which quest would you like to modify? (Use -1 for none)" << std::endl;
-            quests->printNumberedQuests();
-            std::cin >> answer;
-            bool isNum = true;
-            int questNum = -1;
-            try{
-              questNum = std::stoi(answer);
-            } catch(std::exception& e){
-              std::cout << "Invalid answer." << std::endl;
-              isNum = false;
-            }
-            std::vector<Quest*> questList = quests->getQuests();
-            if(isNum && (questNum < 0 || questNum >= quests->getQuests().size())){
-              std::cout << "Please enter a quest's number or -1." << std::endl;
-              isNum = false;
-            }
-            if(isNum){
-              questPicked = true;
-              if(questNum != -1){
-                bool doneEditing = false;
-                Quest* chosenQuest = questList[questNum];
-                while(!doneEditing){
-                  chosenQuest->printQuest();
-                  std::cout << "What would you like to edit? Enter either the value category you would like to edit or a boolean value you would like to add or remove. Capitalizations do matter." << std::endl;
-                  std::cin >> answer;
-                  std::vector<std::string> categories = chosenQuest->getValueCategories();
-                  bool isCategory = false;
-                  for(int i = 0; i < categories.size(); i++){
-                    if(answer == categories[i]){
-                      isCategory = true;
-                      std::cout << "What would you like to change " << answer << " to?" << std::endl;
-                      std::cin >> answer;
-                      chosenQuest->changeValue(i, answer);
-                    }
-                  }
-                  if(!isCategory){
-                    std::vector<std::string> bools = chosenQuest->getBools();
-                    bool isBool = false;
-                    for(int i = 0; i < bools.size(); i++){
-                      if(bools[i] == answer){
-                        isBool = true;
-                        chosenQuest->removeBool(i);
-                        break;
+            int printedQuests = quests->printNumberedQuests();
+            if(printedQuests != 0){
+              std::cin >> answer;
+              bool isNum = true;
+              int questNum = -1;
+              try{
+                questNum = std::stoi(answer);
+              } catch(std::exception& e){
+                std::cout << "Invalid answer." << std::endl;
+                isNum = false;
+              }
+              std::vector<Quest*> questList = quests->getQuests();
+              if(isNum && (questNum < 0 || questNum >= quests->getQuests().size())){
+                std::cout << "Please enter a quest's number or -1." << std::endl;
+                isNum = false;
+              }
+              if(isNum){
+                questPicked = true;
+                if(questNum != -1){
+                  bool doneEditing = false;
+                  Quest* chosenQuest = questList[questNum];
+                  while(!doneEditing){
+                    chosenQuest->printQuest();
+                    std::cout << "What would you like to edit? Enter either the value category you would like to edit or a boolean value you would like to add or remove. Capitalizations do matter." << std::endl;
+                    std::cin >> answer;
+                    std::vector<std::string> categories = chosenQuest->getValueCategories();
+                    bool isCategory = false;
+                    for(int i = 0; i < categories.size(); i++){
+                      if(answer == categories[i]){
+                        isCategory = true;
+                        std::cout << "What would you like to change " << answer << " to?" << std::endl;
+                        std::cin >> answer;
+                        chosenQuest->changeValue(i, answer);
                       }
                     }
-                    if(!isBool){
-                      chosenQuest->addBool(answer);
+                    if(!isCategory){
+                      std::vector<std::string> bools = chosenQuest->getBools();
+                      bool isBool = false;
+                      for(int i = 0; i < bools.size(); i++){
+                        if(bools[i] == answer){
+                          isBool = true;
+                          chosenQuest->removeBool(i);
+                          break;
+                        }
+                      }
+                      if(!isBool){
+                        chosenQuest->addBool(answer);
+                      }
                     }
-                  }
-                  chosenQuest->printQuest();
-                  bool answerGiven = false;
-                  while(!answerGiven){
-                    std::cout << "Are you finished modifying this quest? (yes/no)" << std::endl;
-                    std::cin >> answer;
-                    if(answer == "yes"){
-                      answerGiven = true;
-                      doneEditing = true;
-                    } else if (answer == "no"){
-                      answerGiven = true;
-                    } else {
-                      std::cout << "Invalid answer." << std::endl;
+                    chosenQuest->printQuest();
+                    bool answerGiven = false;
+                    while(!answerGiven){
+                      std::cout << "Are you finished modifying this quest? (yes/no)" << std::endl;
+                      std::cin >> answer;
+                      if(answer == "yes"){
+                        answerGiven = true;
+                        doneEditing = true;
+                      } else if (answer == "no"){
+                        answerGiven = true;
+                      } else {
+                        std::cout << "Invalid answer." << std::endl;
+                      }
                     }
                   }
                 }
               }
+            } else {
+              questPicked = true;
+              std::cout << "No quests can be modified. Pass a story point to open quests for modification." << std::endl;
             }
           }
           break;
