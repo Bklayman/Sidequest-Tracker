@@ -42,7 +42,7 @@ public:
   }
 
   //Gets the quest list associated with a base or save file
-  static QuestList* getQuestList(char* fileName, std::string baseOrSave){
+  static QuestList* getQuestList(char* fileName, int baseOrSave){
     std::ifstream file;
     file.open(fileName);
     if(!file.is_open()){
@@ -52,7 +52,7 @@ public:
     std::string fileLine;
     QuestList* quests = new QuestList();
     //Loads info from base file
-    if(baseOrSave == "1"){
+    if(baseOrSave == 1){
       int storyPointNum = 0;
       bool readSuccess = true;
       if(!(std::getline(file, fileLine))){
@@ -285,6 +285,7 @@ public:
         garbageSPStart = saveInfo.find("..*!D");
       }
     }
+    file.close();
     return quests;
   }
 

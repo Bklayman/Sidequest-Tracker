@@ -175,20 +175,32 @@ int main(int argc, char** argv){
     std::cout << "Usage: ./main [Base .txt file / Saved .txt file]" << std::endl;
     exit(0);
   }
-  //Gets user input on the type of file used
-  std::cout << "Is this file a Base or a Save? (1 or 2)" << std::endl;
-  bool validAnswer = false;
-  std::string answer;
-  while(!validAnswer){
-    std::cin >> answer;
-    if(answer == "1" || answer == "2"){
-      validAnswer = true;
-    } else {
-      std::cout << "Please enter either 1 (Base) or 2 (Save)." << std::endl;
-    }
+  //Checks whether this is a save or base .txt file
+  std::ifstream file;
+  file.open(argv[1]);
+  if(!file.is_open()){
+    std::cout << "ERROR: File " << argv[1] << " does not exist." << std::endl;
+    exit(1);
   }
+  std::string fileLine;
+  std::string fileInfo = "";
+  while(file >> fileLine){
+    fileLine = Load::trim(fileLine);
+    fileInfo = fileInfo + fileLine;
+  }
+  bool base = true;
+  if(fileInfo.find("..+!L") != -1 || fileInfo.find("..+!A") != -1 || fileInfo.find("..+!W") != -1 || fileInfo.find("..+!B") != -1 || fileInfo.find("..+!U") != -1 || fileInfo.find("..-!Y") != -1 || fileInfo.find("..*!S") != -1 || fileInfo.find("..*!D") != -1){
+    base = false;
+  }
+  int isBase = 0;
+  if(base){
+    isBase = 1;
+  }
+  std::cout << isBase << std::endl;
+  file.close();
+  std::string answer;
   //Loads the file and uses the main menu to get user input and execute that input.
-  QuestList* quests = Load::getQuestList(argv[1], answer);
+  QuestList* quests = Load::getQuestList(argv[1], isBase);
   bool wantExit = false;
   while(!wantExit){
     std::cout << "Enter what action you would like to take (type 'help' or 'h' for help)" << std::endl;
