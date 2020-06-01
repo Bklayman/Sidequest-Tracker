@@ -71,16 +71,20 @@ public:
             if(printedQuests != 0){
               std::cout << "Which quest(s) would you like to remove?\nUse space-separated numbers for multiple quests.\nEnter -1 to exit." << std::endl;
               std::getline(std::cin, answer);
-              std::vector<int> splitAnswer = splitRemoveQuestAnswer(answer);
-              if(splitAnswer.size() != 0){
+              if(answer == "-1"){
                 finishedRemoving = true;
-                for(int i = 0; i < splitAnswer.size(); i++){
-                  if(splitAnswer[i] < 0 || splitAnswer[i] >= printedQuests){
-                    finishedRemoving = false;
-                    std::cout << "Quest number " << i << ": " << splitAnswer[i] << " is invalid." << std::endl;
-                    break;
+              } else {
+                std::vector<int> splitAnswer = splitRemoveQuestAnswer(answer);
+                if(splitAnswer.size() != 0){
+                  finishedRemoving = true;
+                  for(int i = 0; i < splitAnswer.size(); i++){
+                    if(splitAnswer[i] < 0 || splitAnswer[i] >= printedQuests){
+                      finishedRemoving = false;
+                      std::cout << "Quest number " << i << ": " << splitAnswer[i] << " is invalid." << std::endl;
+                      break;
+                    }
+                    quests->removeQuest(splitAnswer[i]);
                   }
-                  quests->removeQuest(splitAnswer[i]);
                 }
               }
             } else {
@@ -97,16 +101,20 @@ public:
             if(printedQuests != 0){
               std::cout << "Which quest(s) would you like to reuse?\nUse space-separated numbers for multiple quests.\nEnter -1 to exit." << std::endl;
               std::getline(std::cin, answer);
-              std::vector<int> splitAnswer = splitRemoveQuestAnswer(answer);
-              if(splitAnswer.size() != 0){
+              if(answer == "-1"){
                 finishedRemoving = true;
-                for(int i = 0; i < splitAnswer.size(); i++){
-                  if(splitAnswer[i] < 0 || splitAnswer[i] >= printedQuests){
-                    finishedRemoving = false;
-                    std::cout << "Quest number " << i << ": " << splitAnswer[i] << " is invalid." << std::endl;
-                    break;
+              } else {
+                std::vector<int> splitAnswer = splitRemoveQuestAnswer(answer);
+                if(splitAnswer.size() != 0){
+                  finishedRemoving = true;
+                  for(int i = 0; i < splitAnswer.size(); i++){
+                    if(splitAnswer[i] < 0 || splitAnswer[i] >= printedQuests){
+                      finishedRemoving = false;
+                      std::cout << "Quest number " << i << ": " << splitAnswer[i] << " is invalid." << std::endl;
+                      break;
+                    }
+                    quests->reuseQuest(splitAnswer[i], 0);
                   }
-                  quests->reuseQuest(splitAnswer[i], 0);
                 }
               }
             } else {
