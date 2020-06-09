@@ -79,6 +79,7 @@ public:
     //Saves everything to specified file
     std::ofstream file;
     answer = "Save_Files/" + answer;
+    saveText = encrypt(saveText);
     file.open(answer);
     file << saveText;
     file.close();
@@ -100,6 +101,50 @@ public:
         std::cout << "Invalid answer given." << std::endl;
       }
     }
+  }
+
+  static std::string flipByGroup(std::string input, int groupSize){
+    std::string result = "";
+    for(int i = 0; i < input.length(); i+= groupSize){
+      result+= input.substr(i + groupSize - 1, 1);
+      result+= input.substr(i + 1, groupSize - 2);
+      result+= input.substr(i, 1);
+    }
+    return result;
+  }
+
+  static std::string flipWhole(std::string input){
+    std::string result = "";
+    for(int i = 0; i < input.length(); i++){
+      result+= input.substr(input.length() - i - 1, 1);
+    }
+    return result;
+  }
+
+  static std::string flipHalf(std::string input){
+    std::string result = "";
+    for(int i = 0; i < input.length(); i++){
+      if(i % 2 == 1){
+        result+= input.substr(input.length() - i - 1, 1);
+      } else {
+        result+= input.substr(i, 1);
+      }
+    }
+    return result;
+  }
+
+  static std::string encrypt(std::string input){
+    input = flipByGroup(input, 4);
+    input = flipWhole(input);
+    input = flipHalf(input);
+    return input;
+  }
+
+  static std::string unEncrypt(std::string input){
+    input = flipHalf(input);
+    input = flipWhole(input);
+    input = flipByGroup(input, 4);
+    return input;
   }
 
 };

@@ -3,6 +3,7 @@
 
 #include "quest.hh"
 #include "questList.hh"
+#include "save.hh"
 
 class Load{
 private:
@@ -105,9 +106,10 @@ public:
     } else {
       std::string saveInfo = "";
       std::string info;
-      while(file >> info){
-        saveInfo+= " " + info;
+      while(std::getline(file, info)){
+        saveInfo+= info;
       }
+      saveInfo = Save::unEncrypt(saveInfo);
       int questStart = saveInfo.find("..+!L");
       bool foundQuest = false;
       //Saves quests
