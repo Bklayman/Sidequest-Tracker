@@ -100,6 +100,7 @@ public:
             int printedQuests = quests->printNumberedGarbageQuests();
             if(printedQuests != 0){
               std::cout << "Which quest(s) would you like to reuse?\nUse space-separated numbers for multiple quests.\nEnter -1 to exit." << std::endl;
+              std::cin.ignore();
               std::getline(std::cin, answer);
               if(answer == "-1"){
                 finishedRemoving = true;
@@ -152,14 +153,15 @@ public:
                   while(!doneEditing){
                     chosenQuest->printQuest();
                     std::cout << "What would you like to edit? Enter either the value category you would like to edit or a boolean value you would like to add or remove. Capitalizations do matter." << std::endl;
-                    std::cin >> answer;
+                    std::cin.ignore();
+                    std::getline(std::cin, answer);
                     std::vector<std::string> categories = chosenQuest->getValueCategories();
                     bool isCategory = false;
                     for(int i = 0; i < categories.size(); i++){
                       if(answer == categories[i]){
                         isCategory = true;
                         std::cout << "What would you like to change " << answer << " to?" << std::endl;
-                        std::cin >> answer;
+                        std::getline(std::cin, answer);
                         chosenQuest->changeValue(i, answer);
                       }
                     }
@@ -182,6 +184,7 @@ public:
                     while(!answerGiven){
                       std::cout << "Are you finished modifying this quest? (yes/no)" << std::endl;
                       std::cin >> answer;
+                      std::cout << answer << std::endl;
                       if(answer == "yes"){
                         answerGiven = true;
                         doneEditing = true;

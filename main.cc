@@ -57,7 +57,7 @@ void storyPointMenu(QuestList* quests){
     } else if (actionNum == 3){
       done = !done;
     } else if (actionNum == 2){
-      std::cout << "Which story point do you want to bring back? (Enter the number of the desired point)\nAny story point after the chosen point will also be passed." << std::endl;
+      std::cout << "Which story point do you want to bring back? (Enter the number of the desired point or -1 to exit)\nAny story point after the chosen point will also be passed." << std::endl;
       quests->printStoryPointsGarbage();
       std::cin >> answer;
       int storyPointGarbageSize = quests->getStoryPointGarbageSize();
@@ -66,7 +66,7 @@ void storyPointMenu(QuestList* quests){
         quests->reuseStoryPoint(answerNum);
       }
     } else {
-      std::cout << "Which story point do you want to pass? (Enter the number of the desired point)\nAny story point before the chosen point will also be passed." << std::endl;
+      std::cout << "Which story point do you want to pass? (Enter the number of the desired point or -1 to exit)\nAny story point before the chosen point will also be passed." << std::endl;
       quests->printStoryPoints();
       std::cin >> answer;
       int numStoryPoints = quests->getStoryPointsSize();
@@ -196,7 +196,6 @@ int main(int argc, char** argv){
   if(base){
     isBase = 1;
   }
-  std::cout << isBase << std::endl;
   file.close();
   std::string answer;
   //Loads the file and uses the main menu to get user input and execute that input.
