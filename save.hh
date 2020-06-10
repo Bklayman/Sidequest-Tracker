@@ -106,9 +106,16 @@ public:
   static std::string flipByGroup(std::string input, int groupSize){
     std::string result = "";
     for(int i = 0; i < input.length(); i+= groupSize){
-      result+= input.substr(i + groupSize - 1, 1);
-      result+= input.substr(i + 1, groupSize - 2);
-      result+= input.substr(i, 1);
+      if(input.length() - i >= groupSize){
+        result+= input.substr(i + groupSize - 1, 1);
+        result+= input.substr(i + 1, groupSize - 2);
+        result+= input.substr(i, 1);
+      } else {
+        for(int j = i; j < input.length(); j++){
+          result+= input.substr(j, 1);
+        }
+        break;
+      }
     }
     return result;
   }
@@ -123,11 +130,21 @@ public:
 
   static std::string flipHalf(std::string input){
     std::string result = "";
-    for(int i = 0; i < input.length(); i++){
-      if(i % 2 == 1){
-        result+= input.substr(input.length() - i - 1, 1);
-      } else {
-        result+= input.substr(i, 1);
+    if(input.length() % 2 == 1){
+      for(int i = 0; i < input.length(); i++){
+        if(i % 2 == 0){
+          result+= input.substr(input.length() - i - 1, 1);
+        } else {
+          result+= input.substr(i, 1);
+        }
+      }
+    } else {
+      for(int i = 0; i < input.length(); i++){
+        if((i % 2 == 0 && i < input.length() / 2) || (i % 2 == 1 && i > input.length() / 2)){
+          result+= input.substr(input.length() - i - 1, 1);
+        } else {
+          result+= input.substr(i, 1);
+        }
       }
     }
     return result;
