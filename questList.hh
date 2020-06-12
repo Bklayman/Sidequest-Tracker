@@ -135,6 +135,9 @@ public:
       if(values.size() > 0 && quests[i]->getStoryPoint() <= storyPointGarbage.size()){
         std::cout << i << ": " << values[0] << std::endl;
         counter++;
+      } else if(quests[i]->getStoryPoint() <= storyPointGarbage.size()){
+        quests.erase(quests.begin() + i);
+        i--;
       }
     }
     return counter;
