@@ -56,15 +56,7 @@ static std::string encrypt(std::string input){
   return input;
 }
 
-static std::string unEncrypt(std::string input){
-  input = flipHalf(input);
-  input = flipWhole(input);
-  input = flipByGroup(input, 4);
-  return input;
-}
-
 int main(int argc, char** argv){
-  
   if(argc != 2){
     std::cout << "Usage: ./main [.txt save file to update]" << std::endl;
     exit(1);
@@ -86,13 +78,5 @@ int main(int argc, char** argv){
   saveFile.open(argv[1]);
   saveFile << originalFileInfo;
   saveFile.close();
-
-  /*
-  std::string testString = "Brendan";
-  testString = encrypt(testString);
-  std::cout << testString << std::endl;
-  testString = unEncrypt(testString);
-  std::cout << testString << std::endl;
-  */
   return 0;
 }

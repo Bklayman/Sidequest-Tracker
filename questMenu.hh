@@ -70,6 +70,7 @@ public:
             int printedQuests = quests->printNumberedQuests();
             if(printedQuests != 0){
               std::cout << "Which quest(s) would you like to remove?\nUse space-separated numbers for multiple quests.\nEnter -1 to exit." << std::endl;
+              std::cin.ignore();
               std::getline(std::cin, answer);
               if(answer == "-1"){
                 finishedRemoving = true;

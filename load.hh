@@ -117,7 +117,7 @@ public:
         if(foundQuest){
           saveInfo = saveInfo.substr(5, saveInfo.length() - 5);
         } else {
-          saveInfo = saveInfo.substr(6, saveInfo.length() - 5);
+          saveInfo = saveInfo.substr(5, saveInfo.length() - 5);
           foundQuest = !foundQuest;
         }
         Quest* curQuest = new Quest();
